@@ -377,20 +377,145 @@
   .checkbox-row input[type=checkbox] { margin-top: 3px; flex-shrink: 0; width: 18px; height: 18px; }
 
   .illustration {
-    background: linear-gradient(180deg, #0c0e12 0%, #14171d 100%);
+    background: #ffffff;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 12px;
+    padding: 0;
     margin-bottom: 14px;
     overflow: hidden;
+    cursor: zoom-in;
+    position: relative;
   }
-  .illustration svg { width: 100%; height: auto; display: block; }
+  .illustration svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .illustration img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-preload { display: none !important; }
+  .step-diagram img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  .illustration::after {
+    content: '⤢';
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background: rgba(26, 26, 26, 0.6);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    pointer-events: none;
+  }
   .illustration-caption {
     font-size: 12px;
     color: var(--muted);
     text-align: center;
-    margin-top: 6px;
+    padding: 6px 8px 10px;
     font-style: italic;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+  }
+  /* Step diagram (smaller, sits above the step text) */
+  .step-diagram {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    cursor: zoom-in;
+    margin: 8px 0;
+    position: relative;
+  }
+  .step-diagram svg { width: 100%; height: auto; display: block; }
+  .step-diagram::after {
+    content: '⤢';
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background: rgba(26,26,26,0.55);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    pointer-events: none;
+  }
+  /* Lightbox */
+  #lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 10, 14, 0.96);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    touch-action: none;
+  }
+  #lightbox.open { display: flex; }
+  #lightbox-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #lightbox-content > * {
+    max-width: 96vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    transform-origin: center center;
+    transition: transform 0.05s ease-out;
+    will-change: transform;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  #lightbox-close {
+    position: absolute;
+    top: calc(12px + var(--safe-top));
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 28px;
+    line-height: 1;
+    z-index: 101;
+    cursor: pointer;
+  }
+  #lightbox-close:hover { background: rgba(255, 255, 255, 0.2); }
+  .lightbox-hint {
+    position: absolute;
+    bottom: calc(20px + var(--safe-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.6);
+    font-size: 12px;
+    pointer-events: none;
   }
 
   .mark-done-bar {
@@ -435,6 +560,35 @@
     outline: none;
   }
   .search-bar:focus { border-color: var(--accent); }
+
+  .cat-filters {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-bottom: 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .cat-filters::-webkit-scrollbar { display: none; }
+  .cat-chip {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .cat-chip.active {
+    background: var(--accent-2);
+    color: #fff;
+    border-color: var(--accent-2);
+  }
 
   .empty {
     text-align: center;
@@ -546,6 +700,8 @@
 
       <input type="search" class="search-bar" id="search" placeholder="Search tasks (e.g. deck, gib, fence...)" oninput="renderHome()" />
 
+      <div class="cat-filters" id="cat-filters"></div>
+
       <div id="categories-container"></div>
     </section>
 
@@ -588,9 +744,15 @@
       </div>
 
       <div class="card">
-        <h2>Data</h2>
-        <p>Your account and progress are stored locally on this device.</p>
+        <h2>Data &amp; privacy</h2>
+        <p>Your account details (name, email) and your task progress are stored to your account. See our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</p>
         <button class="btn secondary" style="margin-top:10px;" onclick="resetProgress()">Reset progress</button>
+      </div>
+
+      <div class="card">
+        <h2>Delete account</h2>
+        <p>Permanently delete your account and all associated data. This cannot be undone.</p>
+        <button class="btn danger" style="margin-top:10px;" onclick="deleteAccount()">Delete my account</button>
       </div>
 
       <button class="btn danger" style="margin-top:10px;" onclick="logout()">Sign out</button>
@@ -613,9 +775,17 @@
   </nav>
 </div>
 
+<!-- Lightbox / zoom overlay (hidden until a diagram is tapped) -->
+<div id="lightbox" style="display:none;">
+  <button id="lightbox-close" aria-label="Close" type="button">&times;</button>
+  <div id="lightbox-content"></div>
+  <div class="lightbox-hint">pinch to zoom · drag to pan · tap × to close</div>
+</div>
+
 <script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 <script src="config.js"></script>
 <script src="illustrations.js"></script>
+<script src="diagrams.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

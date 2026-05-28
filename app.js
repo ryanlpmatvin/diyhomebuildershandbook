@@ -12,57 +12,57 @@ const TASKS = [
     id: 'fence-paling',
     category: 'Exterior',
     title: 'Build a timber paling fence',
-    summary: 'A standard 1.8 m boundary fence with concreted posts, rails and palings.',
+    summary: 'A 1.8 m boundary fence with concreted posts, two rails and vertical palings.',
     difficulty: 'Intermediate',
-    time: '1–2 weekends (per 10 m)',
+    time: '1–2 weekends per 10 m',
     overview:
-      'A paling fence is the most common Kiwi boundary fence. The basic anatomy is concreted posts at ~2.4 m centres, two or three horizontal rails fixed between the posts, and vertical palings nailed or screwed to the rails. Get the posts right and the rest is straightforward.',
+      'A paling fence comprises three structural elements: timber posts set in concrete footings at a maximum 2.4 m centres, horizontal rails fixed between posts, and vertical palings fastened to the rails. Post installation is the critical phase — once posts are plumb and the concrete has cured, the remainder of the build is straightforward carpentry.',
     tools: [
-      'Post hole borer (manual or hired powered)',
-      'Spirit level (600 mm) and string line',
-      'Measuring tape, builder’s pencil, chalk line',
-      'Spade and crowbar (for rocks and clay)',
+      'Post hole borer (manual auger or hired powered borer)',
+      'Spirit level, 600 mm minimum',
+      'Builder\'s line and stakes',
+      'Tape measure, pencil, chalk line',
+      'Spade and crowbar',
       'Cordless drill/driver and impact driver',
-      'Circular skill saw with a sharp blade',
-      'Hammer and/or nail gun (galvanised gun nails)',
-      'Wheelbarrow for mixing concrete'
+      'Circular saw with a sharp blade',
+      'Hammer or framing nail gun (galvanised collated nails)',
+      'Wheelbarrow and shovel for concrete mixing'
     ],
     materials: [
-      'H4 or H5 treated posts (100×100 mm, 2.4 m long for 1.8 m above ground)',
-      'H3.2 rails (100×50 mm)',
-      'H3.2 palings (100×19 mm, 1.8 m)',
-      'Rapid-set post concrete (one 20 kg bag per post is typical)',
-      'Hot-dip galvanised or stainless screws/nails',
-      'Galvanised brackets or rail-to-post hardware (optional)',
-      'Builder’s twine and spray paint'
+      'H4 or H5 treated posts — 100 × 100 mm × 2.4 m (1.8 m above ground, 600 mm below)',
+      'H3.2 rails — 100 × 50 mm',
+      'H3.2 palings — 100 × 19 mm × 1.8 m',
+      'Rapid-set post concrete — approximately 2 × 20 kg bags per standard post hole (3 bags for corner / gate post holes)',
+      'Hot-dip galvanised or stainless 75 mm screws or nails',
+      'Builder\'s twine and marker paint'
     ],
     steps: [
-      { title: 'Mark the line and check the boundary', body: 'Confirm the boundary with title plans or talk to your neighbour. Run a string line between the start and end points to mark the exact fence line.' },
-      { title: 'Set out post positions', body: 'Mark post centres at 2.4 m maximum (closer if the fence is exposed). Use spray paint or a peg at each location. Plan corners and gate posts first.' },
-      { title: 'Dig the holes', body: 'Aim for holes 600 mm deep × 300 mm wide for a 1.8 m fence. Deeper and wider for corner/gate posts (up to 750 mm). Keep the bottom flat.' },
-      { title: 'Stand the posts and brace', body: 'Drop in a small bed of metal or compacted soil for drainage. Stand the post, plumb in both directions with a level, and brace with timber off-cuts and stakes.' },
-      { title: 'Pour the concrete', body: 'Tip dry rapid-set into the hole around the post, then add water as per the bag instructions. Slope the top of the concrete away from the post to shed water. Re-check plumb before it sets.' },
-      { title: 'Set the rail heights', body: 'Once concrete is set (usually next day), run a string line from end post to end post at the top rail height and bottom rail height. Mark each post.' },
-      { title: 'Fix the rails', body: 'Cut rails to span between posts (or run them past with a half-housing joint). Screw or nail through the post into the rail end — pre-drill to avoid splits. Stagger any joins.' },
-      { title: 'Nail on the palings', body: 'Start at one end with a plumb paling. Use a string line at the top to keep heights consistent. Leave a 5–8 mm gap between palings (they will shrink and swell). Two fixings per rail.' },
-      { title: 'Trim the tops', body: 'Run a chalk line across the paling tops at the finished height (e.g. 1800 mm). Cut with a skill saw set to depth, then sand any rough cuts.' },
-      { title: 'Cap and finish', body: 'A capping rail along the top protects end-grain and looks tidy. Stain or oil with an exterior treatment within a few weeks of install.' }
+      { title: 'Confirm the boundary and set the line', body: 'Verify the boundary using the property title plan. Where the fence is on a shared boundary, discuss the position and cost-sharing with the affected neighbour(s) — the Fencing Act 1978 applies. Drive a stake at each end of the fence run and tension a builder\'s line between them to establish the centreline.', diagram: 'fence-paling-step-layout' },
+      { title: 'Set out post positions', body: 'Mark post centres along the line at 2.4 m maximum spacing. Reduce to 1.8 m on exposed or sloping sites. Plan corner and gate posts first — these typically need deeper, wider footings.', diagram: 'fence-paling-step-layout' },
+      { title: 'Excavate the post holes', body: 'Dig holes 300 mm diameter × 600 mm deep for a standard 1.8 m fence. Increase to 750 mm depth for corner posts and gate hangs. Keep the base flat and clear of loose spoil. Locate buried services before digging — beforeUdig.co.nz.', diagram: 'fence-paling-step-hole' },
+      { title: 'Stand the post and brace plumb', body: 'Place a small bed of compacted metal at the base of the hole for drainage. Set the post centrally and check plumb in both planes with a spirit level. Brace the post temporarily with timber off-cuts staked to the ground.', diagram: 'fence-paling-step-brace' },
+      { title: 'Place the concrete', body: 'A standard 600 × 300 mm post hole typically takes 2 × 20 kg bags of rapid-set concrete (allow 3 bags for corner and gate post holes). Tip the dry mix into the hole around the post, then add water per the bag instructions — typically 3 litres per 20 kg bag. Trowel the top surface so it slopes away from the post on all sides to shed water. Re-verify plumb before initial set.', diagram: 'fence-paling-step-concrete' },
+      { title: 'Mark rail heights', body: 'Once the concrete has cured (24 hours minimum), run a builder\'s line between end posts at the top and bottom rail heights. Mark each intermediate post.' },
+      { title: 'Fix the rails', body: 'Cut rails to span tightly between posts, or run continuous with a half-lap or scarf joint at posts. Pre-drill before fixing to prevent splitting at the rail ends. Stagger rail joints across the fence — never align top and bottom joints on the same post.', diagram: 'fence-paling-step-rails' },
+      { title: 'Fix the palings', body: 'Start with a plumb paling at one end. Maintain a 5–8 mm gap between palings to allow for moisture movement. Use a spacer block for consistency. Fix each paling with two fasteners per rail. Run a top string line to keep paling heights uniform.', diagram: 'fence-paling-step-palings' },
+      { title: 'Trim the tops', body: 'Snap a chalk line across the palings at the finished height (1800 mm above ground typical). Cut with a circular saw set to the paling thickness. Light sand any visible saw marks.' },
+      { title: 'Install the cap rail', body: 'Fix a continuous cap rail over the paling tops to protect the end-grain and shed water. The cap should overhang each face by 10–15 mm. Apply an exterior stain, oil or paint within four weeks of installation.', diagram: 'fence-paling-step-cap' }
     ],
     bestPractice: [
-      'Always use H4 (or H5) treated timber for anything in ground contact — H3 will rot.',
-      'Posts must be plumb in two planes — a single check is not enough.',
-      'Concrete the hole, do not just backfill with dirt: the post will lean within a year.',
-      'Pre-drill near the ends of rails and palings to avoid splitting.',
-      'Where the fence is on a slope, step the fence (level panels) or rake it (parallel to slope). Don’t mix.',
-      'For shared boundary fences in NZ, talk to your neighbour first — the Fencing Act 1978 covers cost-sharing for an adequate fence.'
+      'Use H4 (or H5 in marine zones) treated timber for any component in ground contact. H3.2 is rated for exterior above-ground use only.',
+      'Check posts for plumb in both planes during bracing — a single-plane check leaves the fence leaning along its length.',
+      'Always concrete post footings. Compacted soil alone will not hold a fence through a typical New Zealand winter.',
+      'Pre-drill near the ends of rails and palings to prevent splitting.',
+      'On sloped sites, either step the fence in level panels or rake it parallel to the ground. Do not mix the two methods within a single run.',
+      'Maintain a 25–40 mm gap between paling bottoms and ground level to prevent moisture wicking and rot.'
     ],
     commonMistakes: [
-      'Holes too shallow — fence racks in the first windy southerly.',
-      'Posts spaced too far apart — rails sag and palings wave.',
-      'Driving fixings flush into thin palings — they split. Sit the nail head just on the surface.',
-      'No drainage gap below palings — wicking causes rot at the bottom edge.'
+      'Footings under-excavated — fence racks within the first storm season.',
+      'Posts spaced beyond 2.4 m — rails deflect and palings wave under load.',
+      'Fasteners over-driven into thin palings — heads break through and the paling splits.',
+      'Palings hard down on the ground — capillary moisture causes rot at the base within 2–3 years.'
     ],
-    safety: 'Locate underground services before digging — call beforeUdig.co.nz. Wear safety glasses when cutting and ear protection with the skill saw.'
+    safety: 'Locate underground services before digging by requesting a free plan from beforeUdig.co.nz. Wear safety glasses and hearing protection when operating a circular saw. Wet concrete is caustic — wear gloves and rinse skin contact immediately.'
   },
 
   {
@@ -125,7 +125,7 @@ const TASKS = [
 
   {
     id: 'weatherboards',
-    category: 'Exterior',
+    category: 'Cladding',
     title: 'Install bevel-back weatherboards',
     summary: 'Fit horizontal timber cladding over building paper and cavity battens.',
     difficulty: 'Advanced',
@@ -189,7 +189,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: 'A few hours per room',
     overview:
-      'Trims forgive nothing — every gap is visible. The two essential cuts are the 45° mitre (for external corners) and the scribe (for internal corners on skirting, which is more reliable than a mitre because rooms are rarely square).',
+      'Trim work is unforgiving — every gap and misaligned joint is visible in the finished room. Two cuts do most of the work: the 45° mitre for external corners, and the scribe for internal corners on skirting (more reliable than a mitre, because rooms are rarely perfectly square).',
     tools: [
       'Mitre saw (compound for tall skirting)',
       'Coping saw or jigsaw with a fine blade',
@@ -223,7 +223,7 @@ const TASKS = [
     bestPractice: [
       'On internal corners, always cope skirting — mitred internals open up with the seasons.',
       'On external corners, mitre — and back-bevel by 1° so the front face closes tight.',
-      'Cut a hair long and spring in — never short.',
+      'Cut slightly long and spring the trim into place — never cut short.',
       'Sharp pencil only — a fat line is an open joint.',
       'Pre-paint trims before fixing (one coat) — only touch-up needed after.'
     ],
@@ -244,7 +244,7 @@ const TASKS = [
     difficulty: 'Intermediate',
     time: '1 day per room (4 walls + ceiling)',
     overview:
-      'Gibbing is mostly about handling big heavy sheets accurately. Standard interior boards are 10 mm (walls) and 13 mm (ceilings) — wet areas need Aqualine, garages need Fyreline. Sheets run horizontally on walls to minimise visible joints.',
+      'Installing plasterboard ("gibbing") is largely about handling large, heavy sheets accurately and fixing them flat. Standard interior board is 10 mm on walls and 13 mm on ceilings; wet areas require a moisture-resistant board (Aqualine) and garage-to-house walls require a fire-rated board (Fyreline). Sheets are run horizontally on walls to minimise the number of visible joints.',
     tools: [
       'Stanley knife with snap-off blades (and spares)',
       'Tape measure, straight edge / T-square (gib square)',
@@ -357,7 +357,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: '1–2 hours',
     overview:
-      'Hanging a door is the classic "looks easy, has details" job. Three hinges, even gaps all the way round, and a latch that catches first time.',
+      'Hanging a door into an existing frame is a precise job: it comes down to consistent hinge mortises, an even gap (margin) all the way around, and a latch that catches cleanly. This covers fitting a slab door to an existing lined frame — for a frame-and-door unit, see the pre-hung door guide.',
     tools: [
       'Sharp chisel (25 mm) and mallet',
       'Cordless drill and screwdrivers',
@@ -410,7 +410,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: '1–2 days',
     overview:
-      'Painting is 80% preparation. Skipping prep is the single biggest reason DIY paint jobs look DIY. Two coats minimum, sealer/undercoat on any bare patches.',
+      'Painting is roughly 80% preparation. Inadequate preparation is the single biggest reason a DIY paint job looks amateur. Apply two coats minimum, over a sealer or undercoat on any bare or patched areas.',
     tools: [
       'Drop sheets (canvas, not plastic — plastic is slippery and traps wet paint)',
       'Painters tape (low-tack 2-3 day tape, not masking tape)',
@@ -466,7 +466,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: '1 weekend (with drying time)',
     overview:
-      'A splashback is a great first tiling job — small area, vertical surface (no levelling worries), and forgiving with cuts hidden under benchtop. The fundamentals here apply to any tiling.',
+      'A splashback is an ideal first tiling project: a small area, a vertical surface (no levelling to worry about), and edge cuts that are largely hidden under the benchtop and cabinetry. The fundamentals covered here apply to any tiling job.',
     tools: [
       'Notched trowel (6 mm or 8 mm notch to suit tile size)',
       'Tile spacers (2 or 3 mm)',
@@ -523,7 +523,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: '30–60 minutes',
     overview:
-      'A shelf is simple but commonly done badly — wrong fixings for the wall type, no studs found, and not level. Done right, it’s a 30-minute job that won’t fail.',
+      'A wall shelf is a simple job that fails for predictable reasons: the wrong fixing for the wall type, no fixing into a stud, or an out-of-level result. Done correctly it is a 30-minute job that will hold its load reliably.',
     tools: [
       'Stud finder (or knock-test and a thin nail)',
       'Spirit level (or laser level)',
@@ -546,7 +546,7 @@ const TASKS = [
       { title: 'Drill the pilot holes', body: 'Drill straight (not angled — sight from two sides). Don’t go deeper than needed — for hollow walls, you only need to clear the GIB.' },
       { title: 'Fix the brackets', body: 'Drive screws until snug. With timber, stop when the head pulls into the surface — overdriving strips the thread. With toggles in plasterboard, tighten until firm; toggles self-set.' },
       { title: 'Re-check level', body: 'Before placing the shelf, hold the level across the brackets again. Adjust if needed (most brackets have slotted holes).' },
-      { title: 'Mount the shelf', body: 'Place the shelf on the brackets and fix from underneath into the shelf body. Test the load gently before piling stuff on.' }
+      { title: 'Mount the shelf', body: 'Place the shelf on the brackets and fix from underneath into the shelf body. Test the load gently before loading it up.' }
     ],
     bestPractice: [
       'Always fix into a stud where possible — a single screw into a stud holds more than four into plasterboard.',
@@ -571,7 +571,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: '1–2 hours per unit',
     overview:
-      'Flat-pack is mostly about reading the instructions properly and not over-tightening. The cam-and-dowel system is forgiving if assembled in the right order, but unforgiving if not.',
+      'Flat-pack assembly comes down to following the sequence carefully and not over-tightening the fixings. The cam-and-dowel system used in most furniture is forgiving when assembled in the correct order, and troublesome when it is not.',
     tools: [
       'Cordless drill/driver (clutch set low!)',
       'Phillips and Pozidriv bits (most flat-pack uses Pozidriv #2)',
@@ -670,7 +670,7 @@ const TASKS = [
     difficulty: 'Beginner',
     time: '30–60 minutes per area',
     overview:
-      'Two completely different products: silicone (flexible, waterproof, NOT paintable — bathrooms, kitchens, expansion joints) and acrylic painter\'s caulk (paintable, less flexible — gaps between trims and walls, internal corners). Using the wrong one is the #1 caulking mistake.',
+      'There are two distinct products. Silicone is flexible, waterproof and not paintable — use it in bathrooms, kitchens and movement joints. Acrylic painter\'s caulk is paintable but less flexible — use it for gaps between trims and walls and at internal corners. Choosing the wrong one is the most common caulking mistake.',
     tools: [
       'Caulking gun (good quality — cheap ones drip)',
       'Stanley knife and a nozzle cutter',
@@ -897,7 +897,7 @@ const TASKS = [
       'Hinges screwed into the frame, not just into palings. Palings split out.',
       'Gate clearance 10–15 mm at bottom for grass and gravel movement.',
       'Stainless or hot-dip galvanised fixings — gates see weather worse than fences.',
-      'A small chain or wind clip stops the gate slamming itself off the hinges in a southerly.'
+      'A gate spring, chain or wind clip stops the gate slamming itself off the hinges in high wind.'
     ],
     commonMistakes: [
       'Brace going the wrong way (top hinge to bottom latch) — gate droops in weeks.',
@@ -945,7 +945,7 @@ const TASKS = [
       { title: 'Plant and mulch', body: 'Water well before planting to settle the soil. Plant out. Top with mulch (pea straw, lucerne, bark) to retain moisture and suppress weeds.' }
     ],
     bestPractice: [
-      'For edibles, avoid old CCA-treated timber (the green tinted stuff). H4 ACQ/LOSP is current-spec and considered safe. Untreated macrocarpa or cedar is the cleanest option but more expensive.',
+      'For edibles, avoid old CCA-treated timber (the green-tinted type). H4 ACQ/LOSP is current-specification and considered safe. Untreated macrocarpa or cedar is the cleanest option, though more expensive.',
       'Don\'t line with plastic — strangles drainage. Cardboard or weed mat is enough.',
       'Bed soil compacts in the first year — top up with compost each spring.',
       'A 1.2 m width is the limit for reaching across from one side without standing in the bed.'
@@ -1005,14 +1005,1124 @@ const TASKS = [
       'Using a bench grinder without a coolant cup — bluing the steel ruins the temper.'
     ],
     safety: 'Sharp chisels cut better but are more dangerous if they slip. Always chisel away from your body. Never put a sharp tool in a drawer loose — sheath it or use a tool roll.'
+  },
+
+  // ===== MORE INTERIOR =====
+  {
+    id: 'floating-floor',
+    category: 'Interior',
+    title: 'Lay a floating laminate or engineered floor',
+    summary: 'A click-lock floating floor over underlay — no nails or glue to the subfloor.',
+    difficulty: 'Beginner',
+    time: '1–2 days for a typical room',
+    overview:
+      'A floating floor is not fixed to the subfloor — the boards click together and "float" as one sheet over a foam underlay, expanding and contracting with humidity. The two things that ruin a floating floor are skipping the expansion gap at the walls and laying over an uneven subfloor.',
+    tools: [
+      'Tape measure, pencil, square',
+      'Hand saw, jigsaw or circular saw (or a laminate cutter)',
+      'Tapping block and pull bar',
+      'Spacers (8–10 mm)',
+      'Rubber mallet',
+      'Long spirit level or straight edge for checking the subfloor',
+      'Utility knife'
+    ],
+    materials: [
+      'Click-lock laminate or engineered boards (order 10% extra for cuts and waste)',
+      'Foam or rubber underlay (with vapour barrier for concrete subfloors)',
+      'Scotia or quarter-round trim to cover the expansion gap',
+      'Self-levelling compound (only if the subfloor is out of level)',
+      'Threshold/transition strips for doorways'
+    ],
+    steps: [
+      { title: 'Acclimatise the boards', body: 'Leave the unopened packs flat in the room for 48 hours before laying. The boards need to reach the room\'s temperature and humidity, or they\'ll expand or shrink after installation.' },
+      { title: 'Check and prepare the subfloor', body: 'The subfloor must be clean, dry and flat to within 3 mm over 2 m. Check with a straight edge. Fill low spots with self-levelling compound; sand down high spots. On concrete, lay a vapour-barrier underlay.' },
+      { title: 'Plan the direction and layout', body: 'Lay boards parallel to the longest wall, or towards the main light source. Measure the room so the final row isn\'t a thin sliver — if it is, trim the first row to balance it.' },
+      { title: 'Lay the underlay', body: 'Roll out the underlay, butting edges (don\'t overlap) and taping the seams. Trim to the room.' },
+      { title: 'Lay the first row', body: 'Start in a corner with the tongue side facing the wall. Use 8–10 mm spacers against every wall to maintain the expansion gap. Connect boards end to end along the row.' },
+      { title: 'Stagger the joints', body: 'Start each new row with the offcut from the previous row (provided it\'s over 300 mm), so end joints are staggered by at least 300 mm between rows. Aligned joints look wrong and weaken the floor.' },
+      { title: 'Click the rows together', body: 'Angle the board into the row in front, push down to click, then use the tapping block and mallet to close the end joints. A pull bar closes the last board against the wall.' },
+      { title: 'Cut around obstacles', body: 'Scribe and jigsaw around door frames, pipes and corners. Undercut timber door jambs with a flush saw so boards slide underneath — much tidier than cutting boards around them.' },
+      { title: 'Fit the last row', body: 'Rip the final row to width (less the expansion gap). Use the pull bar to draw it tight.' },
+      { title: 'Remove spacers and trim', body: 'Remove all spacers. Fit scotia/quarter-round to the skirting (not the floor — the floor must stay free to move) to cover the gap. Fit threshold strips at doorways.' }
+    ],
+    bestPractice: [
+      'The 8–10 mm expansion gap around every wall and fixed object is non-negotiable — without it the floor buckles in summer.',
+      'Acclimatise the boards for 48 hours first. Skipping this is the most common cause of gapping and peaking.',
+      'Fix the scotia to the skirting, never to the floor — the floor must float freely.',
+      'Stagger end joints by 300 mm minimum and avoid a "stairstep" pattern.',
+      'For wet areas and kitchens use a water-resistant board and a vapour-barrier underlay.'
+    ],
+    commonMistakes: [
+      'No expansion gap — the floor lifts and peaks at the joints.',
+      'Laying over a subfloor that isn\'t flat — boards flex, joints click and gap underfoot.',
+      'Pinning the scotia through the floorboards — stops the floor floating, causes gaps.',
+      'Aligned end joints — looks amateur and weakens the lock.'
+    ],
+    safety: 'Wear safety glasses when cutting. Cut laminate outdoors or with dust extraction — the dust is fine and irritating. Watch your knees — use a kneeling pad.'
+  },
+
+  {
+    id: 'draught-proofing',
+    category: 'Insulation & energy',
+    title: 'Draught-proof doors and windows',
+    summary: 'Seal gaps to cut heat loss — one of the cheapest comfort upgrades.',
+    difficulty: 'Beginner',
+    time: '2–3 hours per house',
+    overview:
+      'Draughts are the cheapest heat loss to fix in a New Zealand home. The main culprits are the gaps around external doors (especially the bottom), window sashes, and unused vents. A few hours and a small budget makes a noticeable difference to warmth and power bills.',
+    tools: [
+      'Tape measure',
+      'Scissors or sharp knife',
+      'Screwdriver or drill (for door seals)',
+      'Hacksaw (to cut door-bottom seals to length)',
+      'A lit incense stick or candle (to find draughts)'
+    ],
+    materials: [
+      'Self-adhesive foam or rubber/EPDM compression strip (for door and window stops)',
+      'Door bottom seal — brush strip, or a door snake for a no-fix option',
+      'Silicone sealant for fixed gaps (frame-to-wall)',
+      'Draught-stopper for unused fireplaces / vents'
+    ],
+    steps: [
+      { title: 'Find the draughts', body: 'On a windy day, move a lit incense stick slowly around door and window edges. Where the smoke wavers, there\'s a draught. Note every leak before you start.' },
+      { title: 'Clean the surfaces', body: 'Adhesive seals only stick to clean, dry surfaces. Wipe the door/window stops and frames with methylated spirits and let dry.' },
+      { title: 'Seal door stops and window sashes', body: 'Apply self-adhesive compression strip to the door stop (the part the door closes against) so the door compresses it when shut. For double-hung and casement windows, apply to the closing edges. Don\'t over-thicken — the door/window must still close easily.' },
+      { title: 'Seal the door bottom', body: 'Measure the door width and cut a brush or blade bottom-seal to length. Screw it to the inside face of the door so it just sweeps the floor when closed. For a no-fix option, a fabric door snake works on internal doors.' },
+      { title: 'Seal fixed gaps', body: 'Where a window or door frame meets the wall lining and there\'s a visible gap, run a neat bead of sealant (paintable acrylic for painted frames, neutral silicone elsewhere). Backer rod first for gaps over 6 mm.' },
+      { title: 'Address vents and fireplaces', body: 'Block unused wall vents and disused fireplace flues with a removable draught-stopper. Keep ventilation where it\'s needed — never block vents serving gas appliances or active fireplaces.' },
+      { title: 'Re-test', body: 'Repeat the incense test on a windy day to confirm the leaks are sealed.' }
+    ],
+    bestPractice: [
+      'Don\'t over-seal a home with unflued gas heaters or open fires — they need air. Only draught-proof rooms with safe, flued or electric heating.',
+      'Compression seals (rubber/EPDM) last far longer than cheap foam — worth the extra cost on doors used daily.',
+      'A draught at the door bottom is usually the biggest single leak — fix it first.',
+      'Keep at least one source of fresh-air ventilation per living area to manage moisture and avoid condensation.'
+    ],
+    commonMistakes: [
+      'Sealing a home so tight that moisture and condensation build up — balance airtightness with ventilation.',
+      'Foam strip too thick — the door won\'t latch.',
+      'Applying adhesive seals to dusty or damp surfaces — they peel off within weeks.',
+      'Blocking vents that serve combustion appliances — a carbon monoxide risk.'
+    ],
+    safety: 'Never block vents or flues serving gas heaters, gas hot water, or solid-fuel fires — restricting their air supply can cause dangerous carbon monoxide build-up. If unsure, consult a registered gasfitter.'
+  },
+
+  {
+    id: 'tv-mount',
+    category: 'Interior',
+    title: 'Mount a TV on the wall',
+    summary: 'Fix a bracket securely into studs and hang the TV level.',
+    difficulty: 'Beginner',
+    time: '1–2 hours',
+    overview:
+      'A wall-mounted TV is a straightforward job that goes wrong when the bracket is fixed into plasterboard alone. A modern TV plus a swing-arm bracket is heavy and cantilevered — it must be fixed into the timber studs (or solid masonry). Get the fixings and the level right and it\'s a quick job.',
+    tools: [
+      'Stud finder',
+      'Spirit level (or laser level)',
+      'Cordless drill and bits (wood, and masonry if on a block/brick wall)',
+      'Socket or spanner for the lag bolts',
+      'Tape measure and pencil',
+      'A helper (TVs are awkward to lift onto a bracket alone)'
+    ],
+    materials: [
+      'VESA-compatible wall bracket rated above your TV\'s weight (check the VESA hole spacing on the TV)',
+      'Lag bolts/coach screws supplied with the bracket (into timber studs)',
+      'Masonry anchors if fixing to brick/concrete (never plasterboard plugs)',
+      'Cable management trunking or in-wall cable kit (optional)'
+    ],
+    steps: [
+      { title: 'Choose the height', body: 'For comfortable viewing, the centre of the screen should be roughly at eye level when seated — typically 1000–1200 mm from floor to screen centre in a lounge. Mark the intended screen centre on the wall.' },
+      { title: 'Find the studs', body: 'Use a stud finder to locate the timber studs (usually 400 or 600 mm centres). Mark the centre of at least two studs that fall within the bracket\'s width. The bracket must bolt into solid timber, not just plasterboard.' },
+      { title: 'Attach the arms to the TV', body: 'Bolt the bracket\'s vertical arms (or plate) to the back of the TV using the correct VESA screws. Don\'t over-tighten into the TV\'s plastic bosses.' },
+      { title: 'Mark and drill the wall plate', body: 'Hold the wall plate at the marked height, centred on the studs, and check it dead level with a spirit level. Mark the bolt holes over the stud centres. Drill pilot holes into the studs (or masonry holes for a block wall).' },
+      { title: 'Bolt the plate to the wall', body: 'Drive the lag bolts/coach screws into the studs and tighten firmly. Re-check level. The plate should not move at all when pulled.' },
+      { title: 'Hang the TV', body: 'With a helper, lift the TV and engage its arms onto the wall plate per the bracket instructions. Fit any locking screws or safety catch.' },
+      { title: 'Level and manage cables', body: 'Most brackets allow a small tilt/level adjustment — fine-tune until level. Run cables through trunking or an in-wall cable kit for a tidy finish. Never run mains power inside the wall unless done by an electrician — use a proper recessed power kit.' }
+    ],
+    bestPractice: [
+      'Always fix into at least two studs (or solid masonry). Plasterboard anchors alone will not safely hold a wall-mounted TV.',
+      'Buy a bracket rated well above your TV\'s weight — the rating includes a safety margin you want.',
+      'Cantilevered (swing-arm) brackets put far more leverage on the fixings than flat brackets — stud fixing is essential.',
+      'Check the VESA pattern (the square hole spacing on the TV back) before buying the bracket.'
+    ],
+    commonMistakes: [
+      'Fixing into plasterboard with anchors — the TV pulls out of the wall.',
+      'Only catching one stud with a wide bracket — it twists under load.',
+      'Running mains cable inside the wall cavity without a compliant power outlet kit — an electrical hazard.',
+      'Over-tightening VESA screws and cracking the TV\'s mounting bosses.'
+    ],
+    safety: 'A falling TV can seriously injure a child. Fix into studs or masonry only, use the safety catch, and never compromise on the bracket weight rating. Any new mains wiring must be done by a registered electrician.'
+  },
+
+  // ===== MORE EXTERIOR =====
+  {
+    id: 'retaining-wall',
+    category: 'Exterior',
+    title: 'Build a low timber retaining wall',
+    summary: 'A timber pole-and-sleeper wall up to 1 m, with drainage behind.',
+    difficulty: 'Advanced',
+    time: '2–3 weekends',
+    overview:
+      'A retaining wall holds back soil — it works hard and fails dangerously if built wrong. In New Zealand, a retaining wall over 1.5 m high (or under load, e.g. a driveway above it) requires building consent and engineering. This guide covers a simple timber wall up to about 1 m on a stable site. Drainage behind the wall is as important as the wall itself.',
+    tools: [
+      'Post hole borer or spade',
+      'Spirit level and string line',
+      'Circular saw and/or chainsaw for poles',
+      'Cordless drill/driver and an auger bit',
+      'Wheelbarrow and shovel',
+      'Sledgehammer',
+      'Compacting tool (or hired plate compactor)'
+    ],
+    materials: [
+      'H5 treated round poles or 100×100 posts for verticals',
+      'H4 treated sleepers (200×50 or 200×75) for the wall face',
+      'Rapid-set concrete for the post footings',
+      'Hot-dip galvanised coach screws / bolts',
+      'Novacoil or slotted drainage pipe (Nova flow) for behind the wall',
+      'Drainage metal (drainage scoria / GAP 20–40) and geotextile cloth',
+      'Galvanised wall ties / deadmen anchors for higher walls'
+    ],
+    steps: [
+      { title: 'Confirm height and consent', body: 'Measure the retained height. Up to 1.5 m, free-standing and not surcharged (no load like a driveway, building or steep slope above), generally does not need consent — but confirm with your council, as district rules vary. Anything higher or under load needs engineering and consent. Do not guess with retaining walls.' },
+      { title: 'Set out and dig post holes', body: 'Mark post positions at 1.2–1.5 m centres along a string line. Dig holes at least as deep as the wall is high (a 1 m wall needs ~1 m deep footings), 300 mm diameter. The embedment is what stops the wall tipping.' },
+      { title: 'Set the posts', body: 'Stand each post plumb, brace it, and concrete it in. Run a string line to keep the front faces aligned and the tops to height. Let the concrete cure fully (several days for a load-bearing wall) before backfilling.' },
+      { title: 'Fix the sleepers', body: 'Coach-screw or bolt the sleepers horizontally to the back of the posts (soil side), starting from the bottom and working up. Stagger any end joints over posts. Leave a small gap between sleepers, or drill weep holes, to let water through.' },
+      { title: 'Lay the drainage', body: 'Wrap the base behind the wall in geotextile cloth, lay a slotted drainage pipe (Novacoil) running to a stormwater outfall or soak hole, and surround it with drainage metal. This is the most important step — water pressure behind a wall is what pushes it over.' },
+      { title: 'Backfill with drainage metal', body: 'Backfill directly behind the sleepers with free-draining metal (scoria or GAP 40), not the excavated clay. Wrap the metal in geotextile to stop soil clogging it. Compact in layers.' },
+      { title: 'Add deadmen if needed', body: 'For taller walls (towards 1 m+) or where engineering specifies, fit deadman anchors — timber members running back into the bank, tied to the wall, to resist tipping.' },
+      { title: 'Top off and finish', body: 'Topsoil the last 100–150 mm so plants can grow. Ensure surface water is graded to run away from the top of the wall, not over it.' }
+    ],
+    bestPractice: [
+      'Drainage is everything. A wall with no drainage behind it is holding back waterlogged soil at many times the dry weight — it will eventually fail.',
+      'Post embedment depth should at least equal the retained height for a simple cantilever timber wall.',
+      'Backfill with free-draining metal, never the clay you dug out.',
+      'Use H5 for posts in ground, H4 for sleepers. Ground-contact timber must be properly treated.',
+      'When in any doubt about height, load or soil, get a chartered engineer and council consent. Retaining wall failures cause serious injury and expensive damage.'
+    ],
+    commonMistakes: [
+      'No drainage behind the wall — hydrostatic pressure pushes it over within a few wet seasons.',
+      'Posts not deep enough — the wall leans forward at the top.',
+      'Backfilling with clay — holds water against the wall.',
+      'Building over 1.5 m, or under a surcharge, without engineering or consent — illegal and dangerous.'
+    ],
+    safety: 'Excavations can collapse — never work in a deep unsupported trench. Retaining walls are structural; an under-built wall can fail suddenly. Get engineering for anything tall, loaded, or on unstable ground. Locate services before digging (beforeUdig.co.nz).'
+  },
+
+  {
+    id: 'paver-path',
+    category: 'Exterior',
+    title: 'Lay a paver path or patio',
+    summary: 'A sand-and-base paved area with proper fall and edge restraint.',
+    difficulty: 'Intermediate',
+    time: '1–2 weekends',
+    overview:
+      'A good paved area is mostly about what\'s underneath: a compacted base, a screeded sand bed, and a fall to drain water away. Pavers laid straight onto soil will sink and weed. The work is in the preparation, not the laying.',
+    tools: [
+      'Spade and shovel',
+      'Wheelbarrow',
+      'String line and pegs',
+      'Spirit level and a long straight edge',
+      'Rubber mallet',
+      'Screed rails (two lengths of pipe or timber) and a screed board',
+      'Plate compactor (hire one — essential)',
+      'Brick/block splitter or angle grinder with a diamond blade',
+      'Broom'
+    ],
+    materials: [
+      'Pavers (order 5–10% extra for cuts)',
+      'Basecourse / GAP 20–40 hardfill for the sub-base',
+      'Bedding sand (coarse / concrete sand)',
+      'Edge restraints (haunching concrete, or proprietary plastic edging with pegs)',
+      'Fine kiln-dried jointing sand for sweeping into the joints',
+      'Weed mat (optional, under the base)'
+    ],
+    steps: [
+      { title: 'Set out and excavate', body: 'Mark the area with string lines. Excavate to allow for the paver thickness + 30 mm sand bed + 80–100 mm compacted base (more for a driveway). Set the string lines to the finished surface height with a fall of about 1:60 (roughly 15–20 mm per metre) away from any building.' },
+      { title: 'Lay and compact the base', body: 'Spread basecourse hardfill in 50 mm layers and compact each layer with the plate compactor. A well-compacted base is what stops the pavers sinking. Check the fall with a level as you go.' },
+      { title: 'Install edge restraints', body: 'Pavers must be restrained on all edges or they\'ll creep apart. Either haunch the edge pavers in concrete, or fit proprietary edging pinned into the base. Do this before or as you lay the field.' },
+      { title: 'Screed the sand bed', body: 'Lay two screed rails on the base set to the right height (paver thickness below the string), spread sand between them, and drag the screed board across to get a flat, even 30 mm bed. Don\'t walk on the screeded sand.' },
+      { title: 'Lay the pavers', body: 'Work from one corner, laying pavers in your chosen pattern, gently bedding each with a rubber mallet. Keep consistent joints (2–3 mm). Kneel on a board laid over placed pavers, not on the sand.' },
+      { title: 'Cut the edges', body: 'Mark and cut border pavers with a splitter or grinder. Measure each individually — edges are rarely perfectly straight.' },
+      { title: 'Compact the pavers in', body: 'Run the plate compactor (with a rubber mat or carpet to protect the surface) over the laid pavers to bed them into the sand. Watch for any that crack.' },
+      { title: 'Sweep in jointing sand', body: 'Spread dry kiln-dried sand over the surface and sweep it into all the joints. Compact again, top up the sand, and sweep until joints are full. Full joints lock the pavers together.' },
+      { title: 'Final clean', body: 'Sweep off the excess. The joints will settle after a few weeks — top up the jointing sand again if needed.' }
+    ],
+    bestPractice: [
+      'Build in a fall of about 1:60 away from the house — water must drain off, or the area becomes slippery and weedy.',
+      'Compaction is everything: compact the base in layers, and compact the pavers in at the end.',
+      'Edge restraint on every edge — without it the whole field slowly spreads and gaps open up.',
+      'Use the right sand: coarse bedding sand under the pavers, fine kiln-dried sand for the joints. Don\'t use builder\'s sand in the joints.',
+      'For a driveway, increase the base to 150 mm+ and use thicker pavers.'
+    ],
+    commonMistakes: [
+      'No fall — water ponds, the area grows moss and gets slippery.',
+      'Skipping compaction — pavers sink into ruts within a year.',
+      'No edge restraint — pavers migrate and joints open up.',
+      'Laying on a thick sand bed with no base — guaranteed sinking and movement.'
+    ],
+    safety: 'Plate compactors are heavy and vibrate hard — wear steel-cap boots, gloves and ear protection. Cutting pavers throws silica dust — wear a P2 mask and eye protection, and cut wet where possible. Lift pavers with your legs, not your back.'
+  },
+
+  {
+    id: 'timber-steps',
+    category: 'Exterior',
+    title: 'Build timber garden steps',
+    summary: 'Simple box-frame steps for a bank or to a deck, with safe, even risers.',
+    difficulty: 'Intermediate',
+    time: '1 weekend',
+    overview:
+      'Safe steps have consistent riser heights and going (tread depth) — uneven steps are a trip hazard. This covers simple timber box steps suitable for a garden or a low deck. For steps that are part of a building exit or over 1 m high, balustrade and Building Code rules apply.',
+    tools: [
+      'Tape measure, pencil, square',
+      'Spirit level',
+      'Circular saw',
+      'Cordless drill/driver',
+      'Spade',
+      'String line'
+    ],
+    materials: [
+      'H4 treated timber for stringers and box frames (200×50)',
+      'H3.2 treated decking or 200×50 for treads',
+      'H5 posts or concrete pads for the base where in ground contact',
+      'Stainless or hot-dip galvanised structural screws',
+      'Drainage metal for the base'
+    ],
+    steps: [
+      { title: 'Measure the total rise', body: 'Measure the vertical height from the bottom landing to the top, held level (the "total rise"). This is the key number — everything is calculated from it.' },
+      { title: 'Calculate the steps', body: 'Aim for a riser of 150–190 mm and a going (tread depth) of at least 280 mm. Divide the total rise by your target riser to get the number of steps, then divide the total rise by that whole number to get the exact, equal riser height. Every riser must be the same.' },
+      { title: 'Prepare a firm base', body: 'Excavate and compact a base of drainage metal at the bottom, or pour a small concrete pad. The bottom step must sit on something stable that won\'t sink or wash out.' },
+      { title: 'Build the box frames', body: 'For box steps, build a rectangular timber frame for each step at the calculated riser height and going. Screw the frames together, each sitting on and set back from the one below.' },
+      { title: 'Level and fix each box', body: 'Set the bottom box level on the base, check it front-to-back and side-to-side, and fix it. Stack and fix each subsequent box, checking level at every step.' },
+      { title: 'Fix the treads', body: 'Cut treads to overhang the front of each box by 20–30 mm (a small nosing). Fix with two screws per bearer, with a 4–6 mm gap between boards for drainage. Leave a slight fall forward so water runs off.' },
+      { title: 'Add grip and a handrail if needed', body: 'For safety, especially on a shady or wet path, add anti-slip strips to the tread nosings. Steps that are part of a building access route, or more than a few risers, should have a handrail — check the Building Code for required dimensions.' }
+    ],
+    bestPractice: [
+      'Every riser must be the same height — even a 10 mm variation between steps is a trip hazard.',
+      'Keep risers 150–190 mm and goings 280 mm+ for comfortable, safe steps.',
+      'A 20–30 mm tread nosing and a slight forward fall improves safety and sheds water.',
+      'Anti-slip strips on outdoor timber steps prevent slips in the wet — timber gets dangerously slippery.',
+      'Steps forming a required building exit, or higher than the Code threshold, need compliant handrails and balustrades.'
+    ],
+    commonMistakes: [
+      'Uneven riser heights — the classic trip hazard, especially the bottom or top step.',
+      'Bottom step sitting on bare soil — it sinks and the whole flight goes out of level.',
+      'Treads with no gap between boards — water pools and the timber rots.',
+      'No grip on outdoor treads — slippery and dangerous when wet.'
+    ],
+    safety: 'Inconsistent steps cause falls — measure and calculate carefully. Wear glasses and ear protection when cutting. For anything over about 1 m, or steps people rely on daily, consider a handrail and check Building Code requirements.'
+  },
+
+  {
+    id: 'guttering',
+    category: 'Exterior',
+    title: 'Install or replace spouting and a downpipe',
+    summary: 'Hang guttering to a fall and run a downpipe to the stormwater.',
+    difficulty: 'Intermediate',
+    time: '1 day per elevation',
+    overview:
+      'Spouting (guttering) collects roof runoff and carries it to a downpipe and into the stormwater system. The critical detail is the fall — the gutter must slope gently towards the downpipe so it drains and doesn\'t overflow. Working at height is the main risk on this job.',
+    tools: [
+      'Ladder or scaffold (a tower is far safer than a ladder for a full run)',
+      'Tape measure, chalk line, string line',
+      'Cordless drill/driver',
+      'Hacksaw or tin snips for cutting spouting',
+      'Spirit level',
+      'Pop rivet gun',
+      'Sealant gun'
+    ],
+    materials: [
+      'Spouting/guttering (PVC or Colorsteel to match the house)',
+      'Gutter brackets / fascia brackets',
+      'Downpipe and downpipe brackets',
+      'Outlet (dropper), stop ends, internal/external corners',
+      'Neutral-cure gutter sealant',
+      'Pop rivets and gutter screws'
+    ],
+    steps: [
+      { title: 'Plan the fall and outlet position', body: 'Decide where the downpipe will go (near an existing stormwater connection). The gutter falls towards this outlet at about 1:500 (a gentle 2–3 mm per metre). On a long run, fall from the centre to outlets at both ends, or from one end to the other.' },
+      { title: 'Mark the bracket line', body: 'Mark the high end of the gutter just below the roof line, then measure down the fall over the length to mark the low (outlet) end. Snap a chalk line between them — this is your bracket line.' },
+      { title: 'Fix the brackets', body: 'Fix gutter/fascia brackets along the chalk line at the spacing the manufacturer specifies (typically 500–900 mm, closer in snow/heavy-rain areas). Brackets carry the load — don\'t over-space them.' },
+      { title: 'Cut and fit the outlet and stop ends', body: 'Cut the outlet hole and fit the dropper where the downpipe will connect. Fit stop ends to the ends of the run. Seal all joints with neutral-cure gutter sealant.' },
+      { title: 'Clip in the spouting', body: 'Lay the spouting into the brackets, joining lengths with jointers (sealed and riveted) and fitting corners as needed. Check the fall with a level as you go.' },
+      { title: 'Fit the downpipe', body: 'Connect the downpipe to the outlet, run it down the wall fixing it with brackets every 1.5–2 m, and direct the bottom into the stormwater gully or a connection — never just onto the ground beside the foundation.' },
+      { title: 'Test with water', body: 'Run a hose into the high end of the gutter. Check it flows to the outlet without ponding, and that all joints are watertight. Fix any low spots or leaks.' }
+    ],
+    bestPractice: [
+      'Get the fall right — too little and it ponds and overflows; the gutter must drain completely to the outlet.',
+      'Don\'t over-space the brackets, especially on long runs or heavy-rainfall areas — sagging gutters pond and leak.',
+      'Use neutral-cure sealant rated for guttering on every joint; assemble joints clean and dry.',
+      'Direct the downpipe into the stormwater system, not onto the ground next to the house — water against foundations causes damp and erosion.',
+      'Match new spouting profile and colour to the existing house where you\'re only replacing a section.'
+    ],
+    commonMistakes: [
+      'No fall (or fall the wrong way) — water ponds and overflows behind the gutter.',
+      'Brackets too far apart — the gutter sags between them and holds water.',
+      'Downpipe discharging at the base of the wall — damp foundations and erosion.',
+      'Unsealed or poorly assembled joints — persistent drips.'
+    ],
+    safety: 'Most of the risk on this job is the height. Use a scaffold or tower rather than over-reaching from a ladder; never stand on the top rungs. Be aware of overhead power lines near the eaves — keep well clear, and if the service line is close, call your lines company. Don\'t work on a roof edge alone.'
+  },
+
+  // ===== MORE WALLS & CEILINGS =====
+  {
+    id: 'ceiling-insulation',
+    category: 'Insulation & energy',
+    title: 'Install ceiling insulation',
+    summary: 'Lay insulation batts in the ceiling cavity to keep heat in.',
+    difficulty: 'Beginner',
+    time: 'Half a day to a day',
+    overview:
+      'Ceiling insulation is the highest-value insulation in a house — heat rises, and an uninsulated ceiling is the biggest single heat loss. Laying batts in an accessible roof space is a straightforward DIY job. The keys are full coverage with no gaps, and not blocking ventilation or covering anything that gets hot.',
+    tools: [
+      'Sturdy ladder for roof access',
+      'Knee boards or a crawl board (never stand between the joists)',
+      'Sharp knife and a straight edge for cutting batts',
+      'Tape measure',
+      'Head torch or work light',
+      'Dust mask (P2), gloves, long sleeves, safety glasses'
+    ],
+    materials: [
+      'Ceiling insulation batts at the recommended R-value for your climate zone (e.g. R3.6–R6.0 ceiling, check NZ zone requirements)',
+      'Offcuts for filling small gaps',
+      'Insulation as needed to top up existing thin or settled insulation'
+    ],
+    steps: [
+      { title: 'Check access and safety', body: 'Make sure you can move safely in the roof space. Lay a crawl board across the ceiling joists — the ceiling lining (gib) between joists will NOT take your weight. Set up good lighting before you start.' },
+      { title: 'Identify hazards to keep clear of', body: 'Locate downlights, transformers, flues, and any heat-producing fittings. Keep insulation clear of these unless the fitting is rated IC (insulation contact). Old downlights need a clearance gap or a cover — covering them is a fire risk.' },
+      { title: 'Measure and plan coverage', body: 'Plan to cover the whole ceiling area edge to edge, including the tricky bits near the eaves. Note where you\'ll need to cut batts to fit around obstacles.' },
+      { title: 'Lay the batts', body: 'Place batts snugly between the joists, butted hard against each other end-to-end with no gaps. The batt should fill the space without being squashed — compressing insulation reduces its R-value.' },
+      { title: 'Cut to fit neatly', body: 'Cut batts to length with a knife against a straight edge on a board. Cut around braces and obstacles so the batt still fills the full space rather than leaving a gap.' },
+      { title: 'Maintain eave ventilation', body: 'Don\'t push insulation hard into the eaves and block the airflow path — the roof space needs to breathe to avoid moisture build-up. Keep the ventilation gap at the eaves clear.' },
+      { title: 'Top up existing insulation', body: 'If there\'s old, thin or settled insulation, lay new batts over the top (at right angles to the joists if topping up) to reach the target R-value. Don\'t leave gaps between the old and new.' }
+    ],
+    bestPractice: [
+      'Full, gap-free coverage matters more than thickness — even small gaps dramatically reduce performance.',
+      'Never compress batts to fit — squashed insulation loses much of its R-value. Cut to fit instead.',
+      'Keep the required clearance around non-IC downlights and any heat source — covering them is a genuine fire risk.',
+      'Don\'t block eave ventilation — a roof space needs airflow to stay dry.',
+      'Choose the R-value for your climate zone; higher R-value insulates better.'
+    ],
+    commonMistakes: [
+      'Gaps between batts or at the edges — heat escapes straight through them.',
+      'Compressing insulation into tight spaces — drastically reduces its effectiveness.',
+      'Covering old-style downlights or transformers — overheating and fire risk.',
+      'Stepping on the ceiling lining instead of the joists — a foot through the ceiling.'
+    ],
+    safety: 'Only step on joists or a crawl board — the ceiling will not hold your weight. Wear a P2 mask, gloves, long sleeves and glasses; insulation fibres irritate skin, eyes and lungs. Keep insulation clear of hot fittings and recessed lights unless they\'re rated for insulation contact. Beware of live wiring in the roof space — don\'t disturb it; if in doubt, get an electrician.'
+  },
+
+  {
+    id: 'underfloor-insulation',
+    category: 'Insulation & energy',
+    title: 'Install underfloor insulation',
+    summary: 'Fit insulation between the floor joists from below to stop heat loss through the floor.',
+    difficulty: 'Intermediate',
+    time: '1 day for a typical house (more if access is tight)',
+    overview:
+      'Underfloor insulation is one of the most effective comfort upgrades for a suspended timber floor. It is fitted from within the subfloor space, friction-fitted between the joists and held up with straps or netting. The work is physical and dusty in a confined space, but the method is simple: full coverage, snug fit, properly supported, with subfloor ventilation kept clear.',
+    tools: [
+      'Head torch and a work light',
+      'Mechanic\'s creeper or a crawl mat',
+      'Sharp knife and a straight edge for cutting',
+      'Staple gun or proprietary insulation hold-up clips/straps',
+      'Tape measure',
+      'Overalls, P2 dust mask, gloves, safety glasses, knee pads'
+    ],
+    materials: [
+      'Underfloor insulation (polyester segments, foil-faced blanket, or proprietary press-fit panels)',
+      'Insulation support — straps, netting, or product-specific clips',
+      'Ground vapour barrier (polythene) if the subfloor ground is damp'
+    ],
+    steps: [
+      { title: 'Check access, dryness and hazards', body: 'Confirm you can move safely under the floor. If the ground is damp, lay a polythene ground vapour barrier first — insulating over a wet subfloor traps moisture against the floor. Note any old wiring, pipes and signs of borer or rot.' },
+      { title: 'Measure the joist spacing', body: 'Measure the gap between joists (usually 400–450 mm). Buy insulation sized to friction-fit that spacing, or plan to cut blanket to width plus a little for a snug fit.' },
+      { title: 'Cut to a snug fit', body: 'Cut segments slightly wider than the gap so they friction-fit without being compressed. Insulation that is squashed loses much of its R-value; insulation with gaps leaks heat.' },
+      { title: 'Fit between the joists', body: 'Push each piece up between the joists, hard against the underside of the floor with no air gap above it (unless using a foil product that requires an air gap — follow its instructions).' },
+      { title: 'Support it from below', body: 'Hold the insulation up with straps, netting or the product\'s clips at regular spacing so it cannot sag or fall over time. Sagging insulation leaves a cold air gap and stops working.' },
+      { title: 'Work methodically for full coverage', body: 'Cover the whole floor area, fitting tightly around piles, braces and pipes. Cut neatly around obstacles rather than leaving gaps.' },
+      { title: 'Keep subfloor vents clear', body: 'Do not block the subfloor vents — the space must stay ventilated to carry moisture away. Keep insulation and any vapour barrier clear of the vents.' }
+    ],
+    bestPractice: [
+      'Friction-fit snug, never compressed — compressed insulation loses R-value.',
+      'Support every length so it can\'t sag or drop; sagging insulation stops working.',
+      'Lay a ground vapour barrier first if the subfloor ground is damp.',
+      'Keep subfloor vents clear — ventilation prevents moisture and rot.',
+      'Foil-faced products usually need an air gap to work — follow the manufacturer\'s spec.'
+    ],
+    commonMistakes: [
+      'Gaps between segments or around piles — heat leaks straight out.',
+      'Poor support so the insulation sags and a cold gap forms.',
+      'Insulating over damp ground with no vapour barrier — traps moisture against the floor.',
+      'Blocking subfloor vents — leads to damp and rot.'
+    ],
+    safety: 'Confined-space work: tell someone you\'re under there, ensure ventilation, and watch for low oxygen in tight spaces. Wear a P2 mask, overalls, gloves and glasses — fibres and subfloor dust irritate. Do not disturb wiring; if you find damaged or exposed cables, stop and call an electrician. Beware of nails protruding through the floor above.'
+  },
+
+  // ===== CLADDING =====
+  {
+    id: 'building-wrap',
+    category: 'Cladding',
+    title: 'Install building wrap (wall underlay)',
+    summary: 'Fix wall underlay over the framing as a drainage plane behind the cladding.',
+    difficulty: 'Intermediate',
+    time: '1 day per elevation',
+    overview:
+      'Building wrap (wall underlay) is the secondary weather barrier behind the cladding. With a drained cavity in front of it, it sheds any water that gets past the cladding and lets the framing dry. The single rule that governs everything is shingle-lapping: every upper layer overlaps the one below, so water always runs over a join, never into it.',
+    tools: [
+      'Staple gun (or hammer and large-head clouts)',
+      'Tape measure and a sharp knife',
+      'Chalk line',
+      'Scaffold or safe working platform',
+      'Sealant gun for penetrations'
+    ],
+    materials: [
+      'Wall underlay / building wrap to NZ standards (synthetic, breathable)',
+      'Wrap tape (compatible with the underlay)',
+      'Flexible flashing tape for openings and penetrations',
+      'Staples or large-head galvanised clouts'
+    ],
+    steps: [
+      { title: 'Start at the bottom', body: 'Begin the first run at the base of the wall, running horizontally. Working bottom-up means each higher course laps over the one below so water sheds outward.' },
+      { title: 'Run it horizontally with correct laps', body: 'Roll the wrap along the wall and fix it to every stud. Overlap horizontal joins by about 75 mm and vertical joins by about 150 mm — check your product\'s specification, as some differ.' },
+      { title: 'Always shingle-lap, never reverse-lap', body: 'Each upper sheet must sit OVER the sheet below (like roof shingles). A reverse lap funnels water in behind the lower sheet — the classic leak.' },
+      { title: 'Tape the joins', body: 'Tape horizontal and vertical laps with the manufacturer\'s wrap tape so the drainage plane is continuous.' },
+      { title: 'Detail the openings', body: 'Dress the wrap into window and door openings and integrate it with the flashing tape and flashings in the correct sequence — sill first, then jambs, then head — so each layer laps over the one below. This sequencing is what keeps openings watertight.' },
+      { title: 'Seal penetrations', body: 'Tape or seal around pipe and cable penetrations so water can\'t track in behind the wrap.' },
+      { title: 'Fix cavity battens over the wrap', body: 'Install the cavity battens over the studs (through the wrap) to create the drained, ventilated cavity, then the cladding goes on the battens. The wrap must be behind the cavity, not in front of it.' }
+    ],
+    bestPractice: [
+      'Shingle-lap everything: upper over lower, always. This one rule prevents most underlay leaks.',
+      'Don\'t leave the wrap exposed to UV longer than the manufacturer allows — sunlight degrades it; get the cladding on within the stated window.',
+      'Sequence window flashings correctly (sill, jambs, head) so every layer sheds onto the one below.',
+      'Tape laps and penetrations to keep the drainage plane continuous.',
+      'The wrap goes behind the cavity battens — it is the back of the drained cavity, per NZBC E2/AS1.'
+    ],
+    commonMistakes: [
+      'Reverse laps (lower sheet over upper) — funnels water into the wall.',
+      'Leaving wrap exposed to the weather for weeks — UV and wind damage it.',
+      'Poor sequencing at windows — water gets behind the underlay at the openings.',
+      'Fixing cladding straight to the wrap with no cavity — not compliant and traps moisture.'
+    ],
+    safety: 'Most of the risk is working at height — use a scaffold, not a ladder, for full elevations. Wrap is slippery underfoot if it ends up on the ground. Watch for wind catching large sheets.'
+  },
+
+  {
+    id: 'cladding-types',
+    category: 'Cladding',
+    title: 'Types of cladding explained',
+    summary: 'A plain-English guide to the common exterior claddings and how to choose.',
+    difficulty: 'Beginner',
+    time: 'A short read',
+    overview:
+      'Cladding is the weatherproof skin of the house. This is a selection guide rather than an install how-to: it explains the common cladding types used in New Zealand, their look, rough cost, maintenance and who should install them. Almost all modern cladding is installed over a drained cavity on building wrap. Always check council and manufacturer requirements — recladding usually needs consent.',
+    tools: [
+      'This is an overview guide — installation tools vary by system',
+      'For any cladding: a moisture-aware approach, cavity battens, building wrap and flashings'
+    ],
+    materials: [
+      'Bevel-back / rusticated timber weatherboard',
+      'Fibre-cement weatherboard (e.g. pre-finished bevel profiles)',
+      'Board-and-batten or vertical shiplap timber',
+      'Fibre-cement or plywood sheet (with battens or grooves)',
+      'Brick veneer',
+      'Plaster / EIFS (texture-coated systems)',
+      'Profiled metal (corrugate and trays)'
+    ],
+    steps: [
+      { title: 'Timber weatherboard (bevel-back / rusticated)', body: 'The traditional New Zealand look. Horizontal timber boards that overlap to shed water. Warm and repairable, but needs repainting/oiling every several years. DIY-friendly to repair; full installs are skilled work. Best on cavity battens, treated to at least H3.1.' },
+      { title: 'Fibre-cement weatherboard', body: 'Pre-primed cement-composite boards that mimic timber weatherboards (e.g. bevel profiles). Very stable, low movement, doesn\'t rot, holds paint well. Heavier and more brittle to cut (silica dust — cut with the right blade and a mask). Popular for low-maintenance new builds.' },
+      { title: 'Board-and-batten / vertical shiplap', body: 'Vertical timber boards with battens over the joins (board-and-batten) or interlocking vertical boards (shiplap). A more modern or rural look. Needs careful flashing at horizontal joins because water runs down the face.' },
+      { title: 'Sheet cladding (fibre-cement or plywood)', body: 'Large sheets fixed to the framing, with battens over the joins or grooved profiles. Fast to install over big areas, contemporary look. Joints and fixings must be detailed and sealed correctly or they leak. Plywood (e.g. grooved ply) gives a vertical-groove look and must be a proper exterior cladding grade.' },
+      { title: 'Brick veneer', body: 'A single skin of brick tied back to the framing with a cavity behind. Extremely durable and essentially maintenance-free, good thermal mass. Heavier (needs adequate footings), more expensive, and laid by a bricklayer rather than DIY.' },
+      { title: 'Plaster / texture-coated systems (EIFS)', body: 'A render or texture coat over a backing (solid plaster over block, or a texture-coated panel system). Seamless modern look. Quality of the system and installer is critical — older face-fixed plaster systems were a major leaky-building culprit, so use a current cavity-based system and an experienced applicator.' },
+      { title: 'Profiled metal (corrugate / trays)', body: 'Long-run steel in corrugate or tray profiles, used vertically or horizontally. Durable, light, fast, and a strong modern or rural aesthetic. Needs careful flashing and fixing; avoid in very corrosive coastal zones unless the right coating/grade is specified.' }
+    ],
+    bestPractice: [
+      'Whatever you choose, install it over a drained cavity on building wrap — this is what keeps modern homes weathertight.',
+      'Match the cladding to the climate: coastal and high-rainfall zones demand the right material grade and coatings.',
+      'Lower-maintenance materials (fibre-cement, brick, metal) cost more upfront but save repainting over the years; timber rewards regular maintenance with the best repairability.',
+      'Detailing at junctions, windows and the base is where cladding succeeds or fails — flashings matter more than the boards themselves.',
+      'Recladding and many new cladding jobs are Restricted Building Work — use Licensed Building Practitioners and get consent.'
+    ],
+    commonMistakes: [
+      'Choosing a cladding for looks alone without considering maintenance and the local climate.',
+      'Face-fixed/no-cavity systems on a wet site — the leaky-building lesson.',
+      'Cutting fibre-cement dry without dust control — hazardous silica dust.',
+      'Skimping on flashings and junction detailing — where almost all cladding failures start.'
+    ],
+    safety: 'Cutting fibre-cement and masonry releases silica dust — use the correct blade, cut outdoors, wear a P2/P3 mask and eye protection. Most cladding work is at height — use proper scaffold. Weathertightness failures are expensive and slow to show; when in doubt, use a Licensed Building Practitioner.'
+  },
+
+  // ===== MORE INTERIOR =====
+  {
+    id: 'painting-tips',
+    category: 'Interior',
+    title: 'Painting tips and techniques',
+    summary: 'The craft behind a professional paint finish — tools, technique and finishing.',
+    difficulty: 'Beginner',
+    time: 'Reference — apply to any paint job',
+    overview:
+      'Most of the difference between a DIY paint job and a professional one is technique, not paint. This guide covers the craft: choosing and loading tools, cutting in, rolling for an even finish, keeping a wet edge, choosing the right sheen, and fixing the common faults. Use it alongside any specific painting project.',
+    tools: [
+      'Quality angled sash brush (50–63 mm) — a good brush is the single best investment',
+      'Roller frame and quality microfibre/mohair sleeves (not the cheapest — they shed)',
+      'Roller tray or a pail with a grid',
+      'Extension pole',
+      'Low-tack painter\'s tape',
+      'Filler, sanding block and sealer/undercoat for prep'
+    ],
+    materials: [
+      'Quality paint (better coverage and flow than budget paint)',
+      'Sealer/undercoat for bare or patched areas',
+      'Brush and roller cleaning gear'
+    ],
+    steps: [
+      { title: 'Prep is 80% of the result', body: 'Wash, fill, sand and dust before opening the paint. Spot-prime bare timber, filler and stains with sealer/undercoat — unsealed patches "flash" (show through) in the finish. A perfect coat over poor prep still looks poor.' },
+      { title: 'Box your paint', body: 'If using more than one tin of the same colour, mix them together in a larger bucket ("boxing") so the colour is identical across the whole job — tins can vary slightly between batches.' },
+      { title: 'Load the brush properly', body: 'Dip only the bottom third of the bristles, then tap (don\'t scrape) each side against the tin. A correctly loaded brush carries plenty of paint without dripping. Scraping the brush dry-loads it and causes drag marks.' },
+      { title: 'Cut in with confidence', body: 'Paint a 50–75 mm band along edges, corners and around fittings with the angled brush. Work in sections so the cut-in stays wet until you roll up to it. Steady the brush, lead with the long bristles, one smooth pass.' },
+      { title: 'Roll while the cut-in is wet', body: 'Load the roller and roll the field in a large W or N, then fill it in, finishing with light parallel strokes in one direction. Roll up close to the wet cut-in so the two blend with no visible band ("hatbanding").' },
+      { title: 'Keep a wet edge', body: 'Always work into wet paint, never back into a section that has started to dry — overlapping dry paint leaves lap marks. Do a whole wall in one go rather than stopping mid-wall.' },
+      { title: 'Two thin coats, sanded between', body: 'Two thin coats always beat one thick coat — better coverage, no runs, harder finish. A light sand (220 grit) between coats on trim gives a glass-smooth result. Respect the recoat time on the tin.' },
+      { title: 'Choose the right sheen', body: 'Flat/matte hides wall imperfections (ceilings, low-traffic walls); low-sheen/eggshell is the practical wall standard (wipeable); semi-gloss/satin enamel for trim and doors (durable, washable). Higher sheen shows every surface flaw, so prep accordingly.' },
+      { title: 'Fix faults early', body: 'Catch runs and drips while wet and brush them out — once skinned, leave them to dry fully, then sand back and recoat. Remove tape while the final coat is still slightly tacky, pulling at 45°, to avoid peeling a dried film.' },
+      { title: 'Clean and store tools', body: 'Wash water-based paint out of brushes and rollers under warm water until it runs clear; comb the brush, reshape it and hang or lay flat to dry. Good tools cleaned well last for years.' }
+    ],
+    bestPractice: [
+      'Buy a quality brush and roller sleeve — they hold more paint, lay it more evenly and don\'t shed fibres.',
+      'Two thin coats, not one thick one — every time.',
+      'Keep a wet edge and finish a wall in one session to avoid lap marks.',
+      'Seal/undercoat bare and patched areas or they flash through the topcoat.',
+      'Box multiple tins for colour consistency on bigger jobs.'
+    ],
+    commonMistakes: [
+      'Skipping prep and painting over dust, gloss or bare patches.',
+      'Overloading the brush or roller — runs, drips and spatter.',
+      'Stopping in the middle of a wall — visible lap marks.',
+      'Cheap roller sleeves leaving fluff in the finish.',
+      'Leaving tape on until the paint is bone dry — it peels the film off.'
+    ],
+    safety: 'Ventilate the room even with low-VOC paint. Use a proper platform or step stool, not the top of a ladder. Pre-1980 homes may have lead-based paint under newer coats — do not dry-sand or burn it; see the joinery restoration guide for safe handling.'
+  },
+
+  {
+    id: 'prehung-door',
+    category: 'Interior',
+    title: 'Install a pre-hung internal door',
+    summary: 'Fit a door that comes pre-mounted in its frame — plumb, shim and fix.',
+    difficulty: 'Intermediate',
+    time: '1–2 hours per door',
+    overview:
+      'A pre-hung door comes already hinged in its jamb (frame) as a single unit, ready to drop into the rough opening — the common method in modern builds. The whole job is about getting the frame plumb, square and not bowed, then packing it solidly so the door swings true and the margins are even.',
+    tools: [
+      'Spirit level (long) and/or a plumb reference',
+      'Tape measure and pencil',
+      'Cordless drill/driver',
+      'Nail gun or hammer (finishing nails) — or finishing screws',
+      'Timber packers / shims',
+      'Hand saw or multi-tool for trimming shims',
+      'Utility knife'
+    ],
+    materials: [
+      'Pre-hung internal door set (door + jamb + stops)',
+      'Tapered timber packers / shims',
+      '60–75 mm finishing nails or jamb screws',
+      'Architraves to trim both sides',
+      'Construction adhesive (optional, for architraves)'
+    ],
+    steps: [
+      { title: 'Check the opening', body: 'The rough opening should be about 10–15 mm wider and taller than the frame to allow for packing. Check the floor across the opening is level — if it isn\'t, you\'ll pack the low side up so the head ends up level.' },
+      { title: 'Stand the set in the opening', body: 'Lift the pre-hung set into the opening, centred, with the door closed and the jamb sitting on the floor. The architrave/casing reveal should sit against the wall lining on the face side.' },
+      { title: 'Plumb the hinge jamb first', body: 'The hinge side carries the door\'s weight, so plumb it first. Pack behind the jamb at the top hinge, shim until the jamb is dead plumb, and fix through the jamb and packers into the stud. Then pack and fix at the middle and bottom hinges.' },
+      { title: 'Set an even reveal', body: 'Close the door and check the gap (margin) between the door edge and the jamb all the way around — aim for an even 2–3 mm. Adjust the latch jamb in or out until the margin is consistent top to bottom.' },
+      { title: 'Pack and fix the latch jamb', body: 'Shim behind the latch jamb at the top, middle (at the strike) and bottom, keeping that even margin, and fix through into the stud. Pack right behind the strike plate so the jamb can\'t flex when the door is closed.' },
+      { title: 'Fix the head and re-check', body: 'Pack and fix the head jamb if the design requires it. Open and close the door several times — it should swing smoothly, stay where you put it (not drift open or shut), and latch cleanly.' },
+      { title: 'Trim shims and fit architraves', body: 'Score and snap or saw the packers off flush with the framing. Fit the architraves to both faces with a consistent reveal, mitred at the top corners. Punch and fill the nail holes ready for painting.' }
+    ],
+    bestPractice: [
+      'Plumb and fix the hinge jamb first — everything else references off it.',
+      'Always pack directly behind each hinge and behind the strike plate, so the jamb is solid where it carries load.',
+      'Keep the margin around the door even (2–3 mm) — uneven gaps are the tell-tale of a poorly hung door.',
+      'Don\'t overdrive fixings — pulling the jamb tight to a packer is fine, but bowing the jamb ruins the margin and the swing.',
+      'Account for the floor covering (carpet/tiles) when setting the bottom clearance.'
+    ],
+    commonMistakes: [
+      'Fixing the frame without plumbing the hinge side — the door drifts open or won\'t latch.',
+      'No packer behind the strike — the jamb flexes and the door rattles or won\'t catch.',
+      'Overdriven nails/screws bowing the jamb — uneven margins and a binding door.',
+      'Forgetting the floor finish height — door fouls the new carpet or leaves a big gap.'
+    ],
+    safety: 'Door sets are heavy and awkward — lift with help. Keep fingers clear of the hinge side when testing the swing. Standard eye protection when nailing.'
+  },
+
+  // ===== EXTERIOR =====
+  {
+    id: 'deck-stairs',
+    category: 'Exterior',
+    title: 'Build deck stairs with cut stringers',
+    summary: 'Lay out and cut stringers for stairs from a deck to the ground.',
+    difficulty: 'Advanced',
+    time: '1 weekend',
+    overview:
+      'Deck stairs use cut (sawtooth) stringers — angled timber with the steps cut into them — fixed to the deck at the top and a solid footing at the base. The make-or-break is the layout: every riser must be equal and the stringers accurately marked, or the stairs are unsafe and uncomfortable. Stairs forming building access, or above a certain height, must meet Building Code dimensions and need a handrail/balustrade.',
+    tools: [
+      'Framing square with stair gauges (the little brass buttons)',
+      'Circular saw and a hand saw to finish the cuts',
+      'Spirit level and tape measure',
+      'Cordless drill/driver',
+      'Spade and gear for a concrete footing pad'
+    ],
+    materials: [
+      'Stringer stock — H3.2 (or H4 near ground) 240×45 or wider',
+      'Tread timber — two decking boards per tread, or solid 200×50',
+      'Stainless or hot-dip galvanised structural screws / bolts',
+      'Stringer-to-deck brackets or a ledger',
+      'Concrete for the base pad / footing'
+    ],
+    steps: [
+      { title: 'Measure the total rise', body: 'Measure the vertical distance from the top of the deck surface to the ground where the stairs will land, held truly level out from the deck. This total rise drives every calculation.' },
+      { title: 'Calculate equal risers and going', body: 'Divide the total rise by a target riser (150–190 mm) to get the number of steps, then divide the total rise by that whole number for the exact equal riser. Choose a going (tread depth) of 250–300 mm+. Every riser must be identical — including the bottom one once the tread thickness is accounted for.' },
+      { title: 'Lay out the stringer', body: 'Set the stair gauges on the framing square to your riser (on the tongue) and going (on the blade). Walk the square down the stringer board, marking each step. Mark the top plumb cut (against the deck) and the bottom seat cut, and drop the bottom by one tread thickness so the first step ends up equal.' },
+      { title: 'Cut the stringers', body: 'Cut the steps with a circular saw, stopping at the inside corner of each notch, and finish the corners with a hand saw so you don\'t overcut and weaken the stringer. Use the first stringer as a template for the rest.' },
+      { title: 'Pour or set the base footing', body: 'The stairs must land on a solid, level concrete pad or footing — never bare soil, which washes out and lets the stairs drop and go out of level.' },
+      { title: 'Fix the stringers', body: 'Fix the top of the stringers to the deck framing with brackets or a ledger, and the bottom to the footing. Space stringers no more than ~450 mm apart (use three for wide stairs) so the treads don\'t flex.' },
+      { title: 'Fit the treads', body: 'Fix treads with a 4–6 mm gap for drainage and a small nosing overhang. Two screws per stringer per board. Keep the treads level side to side with a slight forward fall to shed water.' },
+      { title: 'Add the handrail / balustrade', body: 'Stairs that are part of building access, or more than the Code threshold above ground, require a compliant handrail and balustrade (graspable rail, limited gap sizes, set heights). Check the Building Code and your council — this is often where consent is triggered.' }
+    ],
+    bestPractice: [
+      'Every riser equal — measure, calculate and remember to deduct one tread thickness from the bottom riser.',
+      'Stringers no more than ~450 mm apart, three for wide stairs, or treads bounce.',
+      'Land on a concrete footing, never bare soil.',
+      'Finish saw cuts by hand so you don\'t overcut the notches and weaken the stringer.',
+      'Handrails and balustrades to Building Code where stairs serve the building or exceed the height threshold.'
+    ],
+    commonMistakes: [
+      'Unequal risers (especially the bottom step) — a serious trip hazard.',
+      'Overcutting the stringer notches with the circular saw — weakens them.',
+      'Stringers spaced too far apart — springy, unsafe treads.',
+      'Bottom of the stairs on soil — it sinks and the flight racks.',
+      'Omitting a required handrail/balustrade — non-compliant and unsafe.'
+    ],
+    safety: 'Stairs are structural and a serious fall risk — get the layout and fixings right. Handrails/balustrades are a Code requirement in many situations; check before you build, as consent may be needed. Wear eye and ear protection when cutting; support long stringers when sawing.'
+  },
+
+  // ===== JOINERY & RESTORATION =====
+  {
+    id: 'restore-joinery',
+    category: 'Joinery & restoration',
+    title: 'Restore timber window and door joinery',
+    summary: 'Strip, repair, re-putty, prime and repaint old timber windows and doors.',
+    difficulty: 'Advanced',
+    time: 'A weekend per window/door',
+    overview:
+      'Original timber joinery on villas and bungalows is usually worth saving — old-growth timber outlasts modern replacements and restoration keeps a home\'s character. The work is methodical: strip back failed paint, repair rot and splits, re-bed loose glass with fresh putty, then build a proper paint system back up. The big caution is lead paint, which is present in most pre-1980 homes.',
+    tools: [
+      'Paint scrapers (flat and shaped) and a hook scraper',
+      'Infrared paint stripper or a low-temperature heat gun (used carefully)',
+      'Sharp chisels and a putty knife / glazing knife',
+      'Orbital sander and hand sanding blocks',
+      'Multi-tool / oscillating tool for raking out old putty',
+      'Filling knives',
+      'Dust extraction or HEPA vacuum, P2/P3 respirator, gloves, glasses'
+    ],
+    materials: [
+      'Linseed-oil glazing putty (for traditional single-glazed timber sashes)',
+      'Two-part epoxy timber repair filler and consolidant (for rot repair)',
+      'Matching timber for splicing in larger repairs',
+      'Oil-based wood primer (or a quality acrylic primer/undercoat system)',
+      'Undercoat and exterior enamel or acrylic topcoat',
+      'Abrasives (80–180 grit), methylated spirits, dust sheets'
+    ],
+    steps: [
+      { title: 'Assess what you\'re dealing with', body: 'Check the joinery for rot (probe soft spots with a screwdriver), failed putty, loose joints and flaking paint. Decide what can be repaired in place versus what needs a sash removed. Assume any paint in a pre-1980 home is lead-based until proven otherwise.' },
+      { title: 'Set up for safe lead-paint work', body: 'For pre-1980 paint: work outdoors or isolate the room with drop sheets, wear a P2/P3 respirator, and use wet-scraping, chemical stripper, or an infrared stripper / low-temp heat — never a high-heat gun or dry power-sanding, which create toxic lead dust and fumes. Collect and bag all debris.' },
+      { title: 'Strip back the failed paint', body: 'Remove flaking and built-up paint back to a sound, firm surface (you don\'t always need bare timber — just stable paint). Scrape with the grain; use the stripper/heat to soften stubborn build-up. Keep the profiles crisp.' },
+      { title: 'Repair rot and splits', body: 'Dig out soft, rotten timber back to sound wood. Treat the area with epoxy consolidant, then rebuild the profile with two-part epoxy filler, or splice in a matching timber section (a "dutchman") for larger losses. Sand to profile once cured.' },
+      { title: 'Rake out and renew the putty', body: 'On single-glazed sashes, rake out cracked, loose glazing putty with a multi-tool or chisel without cracking the glass. Re-bed any loose glass, then press in fresh linseed putty and strike it off at a clean 45° bevel with a glazing knife.' },
+      { title: 'Let the putty skin, then prime', body: 'New linseed putty must skin/cure (days to a couple of weeks) before painting. Prime all bare timber — knots get a knotting sealer, and prime the putty too. Back-prime any faces you can reach; end-grain especially needs sealing.' },
+      { title: 'Build the paint system', body: 'Apply undercoat, then one or two topcoats of exterior-grade enamel/acrylic. On glazing, lap the paint about 2 mm onto the glass off the putty — this seals the putty-to-glass join against water. Sand lightly between coats.' },
+      { title: 'Rehang, adjust and seal', body: 'Refit hardware and rehang sashes/doors. Check they open, close and latch smoothly; ease any binding edges. Make sure drainage paths (weep holes in sills) are clear, not painted shut.' }
+    ],
+    bestPractice: [
+      'Treat all pre-1980 paint as lead-based: wet methods, chemical or infrared stripping, P2/P3 respirator, full clean-up. Never dry-sand or burn it.',
+      'Repair, don\'t replace, sound old-growth timber — it\'s better than most new timber and keeps the home\'s character.',
+      'Let linseed putty skin before painting, and lap paint slightly onto the glass to seal the putty.',
+      'Prime every bare surface, seal knots, and back-prime/seal end-grain — that\'s where decay restarts.',
+      'Keep sill weep holes and drainage paths clear of paint.'
+    ],
+    commonMistakes: [
+      'Dry-sanding or burning old lead paint — creates serious toxic dust and fumes.',
+      'Painting over damp timber or fresh, un-skinned putty — it fails quickly.',
+      'Skipping primer on bare wood and knots — bleed-through and early peeling.',
+      'Painting weep holes and moving edges shut — traps water and jams the joinery.'
+    ],
+    safety: 'Lead paint is the serious hazard here: homes built before about 1980 almost certainly have it. Use wet/chemical/infrared removal, a P2/P3 respirator, gloves and drop sheets; keep children and pregnant people away; bag and dispose of debris responsibly. Glass and chisels cut — handle sashes carefully. Ventilate when using chemical strippers.'
+  },
+
+  {
+    id: 'window-hardware',
+    category: 'Joinery & restoration',
+    title: 'Repair and fit window joinery hardware',
+    summary: 'Stays, fasteners and sash cords — get old windows opening and latching again.',
+    difficulty: 'Intermediate',
+    time: '1–2 hours per window',
+    overview:
+      'Old timber windows fail at the hardware long before the timber gives up: seized casement stays, broken fasteners, and snapped sash cords on double-hung windows. Most are straightforward to repair or replace, and period-correct hardware keeps the look right on a character home.',
+    tools: [
+      'Screwdrivers (flat and posi) and a small drill',
+      'Pliers and a sharp chisel',
+      'Utility knife to cut paint lines',
+      'Putty knife / pry bar to lift beads and stops',
+      'Pencil and tape'
+    ],
+    materials: [
+      'Replacement casement stays and fasteners (match the period/finish)',
+      'Sash cord (waxed sash line) and sash weights if missing',
+      'Brass or matching screws',
+      'Beeswax or candle wax to lubricate runners',
+      'Penetrating oil for seized metal hardware'
+    ],
+    steps: [
+      { title: 'Identify the window type', body: 'Casement windows hinge on the side and use a stay (the arm that holds them open) and a fastener (the latch). Double-hung windows slide vertically and run on cords connected to hidden counterweights. The repair differs for each.' },
+      { title: 'Free up painted-shut windows', body: 'Run a sharp knife along the paint line between sash and frame to break the paint seal, then ease the sash free. Many "broken" old windows are simply painted shut.' },
+      { title: 'Remove the old hardware', body: 'Unscrew the old stay, fastener or catch. If screws are seized or painted, clear the slots with a knife and apply penetrating oil. Keep old hardware as a pattern when buying replacements.' },
+      { title: 'Record a double-hung sash (if needed)', body: 'For a broken sash cord: prise off the staff bead, swing the lower sash out, and open the weight pocket cover in the frame jamb. Tie new waxed sash cord to the weight, run it over the pulley, set the correct length with the sash at the sill, and fix it into the groove in the sash edge. Repeat both sides so the sash is balanced.' },
+      { title: 'Fit casement stay and fastener', body: 'Screw the stay to the sill/frame and the arm to the sash so the window holds at the open positions. Fit the fastener so it pulls the sash firmly closed against the frame. Pre-drill screw holes in old hard timber to avoid splitting.' },
+      { title: 'Adjust and lubricate', body: 'Check the window opens, holds and latches smoothly. Rub beeswax or candle wax on double-hung runners and pulleys. A touch of oil on casement pivots stops squeaks. Don\'t over-tighten stays so the window still moves freely.' },
+      { title: 'Reinstate beads and finish', body: 'Refit any staff beads or stops you removed. Touch up paint where needed — but keep paint off moving metal parts and out of the sash channels so nothing seizes again.' }
+    ],
+    bestPractice: [
+      'Match period hardware (finish and style) on villas and bungalows — it preserves the character and value.',
+      'Use brass or the correct screws and pre-drill old hard timber to avoid splits.',
+      'Balance double-hung sash weights so the window stays put at any height and doesn\'t slam down.',
+      'Wax runners and pulleys; oil pivots — keep moving parts free, and keep paint off them.'
+    ],
+    commonMistakes: [
+      'Wrong sash cord length — the sash won\'t reach the top or sits proud of the sill.',
+      'Over-tightening stays so the window binds.',
+      'Painting hardware and channels shut again after freeing them.',
+      'Forcing a painted-shut sash and cracking the joint or glass instead of cutting the paint line first.'
+    ],
+    safety: 'Double-hung sashes are under spring or weight tension — control the sash and keep fingers clear of the pulley and pocket. Handle old glass carefully (it can be thin and brittle). If the existing paint is pre-1980, treat it as lead-based when cutting or sanding — see the joinery restoration guide.'
+  },
+
+  // ===== WET AREAS =====
+  {
+    id: 'tile-floor',
+    category: 'Wet areas',
+    title: 'Tile a floor',
+    summary: 'Lay floor tiles over a prepared, rigid substrate with full adhesive coverage.',
+    difficulty: 'Intermediate',
+    time: '1–2 days plus curing',
+    overview:
+      'Floor tiling differs from wall tiling in two ways: the substrate must be rigid and flat, and the tiles must be fully bedded with no voids underneath. A flexing floor or a hollow under a tile leads to cracked tiles and grout. In wet areas the floor must be waterproofed first. Get the substrate and the set-out right and the tiling itself is methodical.',
+    tools: [
+      'Notched trowel (10–12 mm for floor tiles)',
+      'Tile cutter or wet saw (wet saw for porcelain and stone)',
+      'Long spirit level / straight edge',
+      'Chalk line and tape measure',
+      'Tile spacers and levelling clips (for large-format tiles)',
+      'Rubber grout float, sponge and buckets',
+      'Mixing paddle and drill',
+      'Knee pads'
+    ],
+    materials: [
+      'Floor tiles (porcelain is the durable standard) — order 10–15% extra',
+      'Flexible tile adhesive rated for floors',
+      'Flexible grout',
+      'Decoupling/uncoupling membrane (over timber floors or where movement is likely)',
+      'Substrate primer/sealer',
+      'Neutral-cure silicone for perimeter and movement joints'
+    ],
+    steps: [
+      { title: 'Assess and prepare the substrate', body: 'Concrete must be cured, sound and flat to within 3 mm over 2 m — grind high spots, fill lows with a floor leveller. Timber floors must be rigid and deflection-free; overlay with a tile underlay/cement sheet and use a decoupling membrane to absorb movement. In a wet area, waterproof first (see the waterproofing guide).' },
+      { title: 'Prime the substrate', body: 'Apply the adhesive manufacturer\'s primer to seal porous substrates and improve the bond. Let it dry as specified.' },
+      { title: 'Set out from the centre', body: 'Find the centre of the room, dry-lay tiles out to the walls, and adjust so you avoid thin slivers at the most visible edges. Snap chalk lines as guides. Plan so cut tiles fall at the least conspicuous edges.' },
+      { title: 'Mix and comb the adhesive', body: 'Mix adhesive to a firm, smooth consistency and let it slake, then re-mix. Spread with the flat side, then comb with the notched side in one direction. Only cover an area you can tile before the adhesive skins (about 1 m²).' },
+      { title: 'Lay the tiles with full coverage', body: 'Bed each tile with a slight twisting motion. Back-butter large-format and porcelain tiles to eliminate voids. Use spacers (and levelling clips for big tiles) and check flatness across several tiles with a straight edge as you go.' },
+      { title: 'Cut the edges', body: 'Measure each perimeter gap individually and cut tiles to fit, allowing the perimeter expansion gap. Cut porcelain on a wet saw.' },
+      { title: 'Let the adhesive cure', body: 'Stay off the floor and don\'t grout until the adhesive has cured (typically 24 hours, longer in cold conditions).' },
+      { title: 'Grout and clean', body: 'Work flexible grout fully into the joints with the float held at 45°, then clean back with a damp sponge in stages, rinsing often. Polish off the haze once dry.' },
+      { title: 'Silicone the perimeter and movement joints', body: 'Leave the perimeter gap and any movement joints free of grout and seal them with neutral-cure silicone — these joints must flex, and grout there will always crack.' }
+    ],
+    bestPractice: [
+      'The substrate must be rigid and flat — a flexing floor cracks tiles and grout no matter how well you tile.',
+      'Full adhesive coverage with no voids — back-butter large and porcelain tiles. A hollow under a tile is a future crack.',
+      'Use a decoupling membrane over timber floors and where movement is likely.',
+      'Silicone (not grout) at the perimeter and any movement joints.',
+      'Set out to avoid thin cut slivers in the most visible areas.'
+    ],
+    commonMistakes: [
+      'Tiling over a floor that flexes — tiles and grout crack within months.',
+      'Voids under tiles from poor coverage — tiles crack underfoot or sound hollow.',
+      'Grouting the perimeter instead of siliconing it — cracks at the walls.',
+      'Grouting before the adhesive has cured — tiles shift.'
+    ],
+    safety: 'Cutting porcelain and stone releases silica dust — cut wet, wear a P2 mask and eye protection. Tiles and adhesive are heavy; lift with care. Kneel on a pad to protect your knees. Keep the wet saw\'s electrics clear of water.'
+  },
+
+  {
+    id: 'waterproofing',
+    category: 'Wet areas',
+    title: 'Waterproof a bathroom or wet area',
+    summary: 'Apply a tanking membrane before tiling so water can\'t reach the structure.',
+    difficulty: 'Advanced',
+    time: '1 day plus curing between coats',
+    overview:
+      'Waterproofing (tanking) is the membrane behind the tiles and fittings that stops water reaching the building structure. In New Zealand this is governed by Building Code clause E3 (internal moisture), and showers — particularly on upper floors or over living spaces — can have specific compliance and producer-statement requirements. A waterproofing failure causes hidden rot that is expensive to fix and can affect insurance, so confirm what your job requires before you start.',
+    tools: [
+      'Paintbrush and roller',
+      'Scissors / utility knife (for reinforcing fabric)',
+      'Notched trowel or spreader',
+      'Bucket and mixing gear',
+      'Clean rags'
+    ],
+    materials: [
+      'A complete waterproofing membrane system (liquid-applied) — use one manufacturer\'s system throughout',
+      'Reinforcing fabric / bandage for joints, corners and penetrations',
+      'System primer',
+      'Bond-breaker tape for movement junctions',
+      'Waterstop angle for shower thresholds (where required)'
+    ],
+    steps: [
+      { title: 'Confirm what the job requires', body: 'Check with your council whether your wet area needs a licensed applicator and a producer statement — this is common for showers, upper-floor bathrooms and tiled areas over living spaces. Don\'t assume a DIY membrane satisfies E3 for every situation.' },
+      { title: 'Get the falls right first', body: 'In a shower or tiled floor with a waste, the substrate must already fall to the waste before you waterproof. A membrane cannot fix a flat or back-falling floor — water will pond. Correct the falls in the substrate first.' },
+      { title: 'Prepare and prime', body: 'The substrate must be clean, dry, sound and dust-free. Apply the system primer and allow it to dry per the data sheet.' },
+      { title: 'Install bond breakers and reinforcing', body: 'Fit bond-breaker tape at wall/floor and wall/wall junctions so the membrane can flex there. Embed reinforcing fabric into the membrane at all internal corners, junctions, the waste and every penetration (taps, mixer, waste) — these are the points that fail first.' },
+      { title: 'Apply the membrane in full coats', body: 'Apply the membrane in the number of coats the system specifies, at the specified spread rate, with each coat fully covering and cured before the next. Take it up the walls to the required height (notably in and around showers) and over the hob/threshold.' },
+      { title: 'Check and flood test', body: 'Inspect for thin spots, pinholes and missed corners and touch them up. Where practical, flood-test the floor for 24 hours to confirm it holds water before tiling.' },
+      { title: 'Tile only once cured', body: 'Let the membrane fully cure before tiling over it. Tile adhesive and tiles then go directly onto the cured membrane.' }
+    ],
+    bestPractice: [
+      'Falls to the waste must be built into the substrate before waterproofing — the membrane cannot create a fall.',
+      'Reinforce every corner, junction and penetration with fabric — these are where leaks start.',
+      'Use one manufacturer\'s complete system and follow its coats, spread rate and cure times exactly.',
+      'Take the membrane up the walls to the required height in showers and wet zones.',
+      'For showers and upper-floor wet areas, confirm whether a licensed applicator and producer statement are needed for E3 compliance.'
+    ],
+    commonMistakes: [
+      'No fall to the waste — water ponds behind the tiles forever.',
+      'Skipping corner and penetration reinforcing — the membrane splits at the junctions.',
+      'Too few coats or thin spots — pinhole leaks.',
+      'Tiling before the membrane has cured, or assuming DIY tanking meets E3 when the job legally needs a licensed applicator.'
+    ],
+    safety: 'Ventilate the room — some membranes give off solvent fumes. Follow the product data sheet precisely. Most importantly, a hidden waterproofing failure causes serious, costly structural damage and can void insurance — if your job needs a licensed waterproofer and a producer statement, use one. When in doubt, get it done professionally.'
+  },
+
+  // ===== EXTERIOR =====
+  {
+    id: 'exterior-painting',
+    category: 'Exterior',
+    title: 'Paint the exterior of a house',
+    summary: 'Wash, prep, prime and coat exterior cladding with the right system and weather.',
+    difficulty: 'Intermediate',
+    time: 'Several days to weeks, weather-dependent',
+    overview:
+      'Exterior paint protects the cladding as much as it decorates it, so preparation and the right coating system matter even more than indoors. The job is mostly washing, scraping, repairing and priming; the colour goes on last. Work with the weather and the sun, top to bottom, and don\'t rush a wall in poor conditions.',
+    tools: [
+      'Water blaster or hose, brush and bucket',
+      'Scrapers and sanding gear',
+      'Ladders and, ideally, scaffold for the high work',
+      'Quality brushes, rollers and extension poles',
+      'Airless sprayer (optional, for large areas)',
+      'Filler, sealant gun, drop sheets and masking'
+    ],
+    materials: [
+      'House wash / sugar soap and mould treatment',
+      'Exterior primer/sealer (plus rust-inhibiting primer for metal and knot sealer for timber)',
+      'Quality exterior-grade acrylic topcoat',
+      'Exterior filler and paintable sealant',
+      'Masking film and tape'
+    ],
+    steps: [
+      { title: 'Wash the whole surface', body: 'Wash off dirt, mould, salt and chalking — paint will not adhere to a dirty or chalky surface. Treat mould with a suitable wash and rinse. Let the cladding dry thoroughly (days, not hours, after washing).' },
+      { title: 'Scrape, sand and repair', body: 'Scrape and sand back all flaking and failed paint to a sound edge. Replace rotten boards, re-fix loose ones, and fill holes and cracks with exterior filler. (On pre-1980 paint, follow lead-safe methods — no dry sanding or blasting without containment.)' },
+      { title: 'Spot-prime bare areas', body: 'Prime all bare timber (seal knots), and apply rust-inhibiting primer to any bare metal and fixings. Unprimed bare areas and rusty nail heads bleed through and fail early.' },
+      { title: 'Mask and protect', body: 'Mask windows, mask or remove fittings, and lay drop sheets over paths, decks and plants.' },
+      { title: 'Seal gaps', body: 'After the first coat (or priming), run exterior paintable sealant into gaps around joinery and junctions — but never seal drainage paths or the underside of head flashings.' },
+      { title: 'Coat top to bottom, in the shade', body: 'Cut in and coat working from the top of the wall down, following the shade around the house. Avoid painting in direct hot sun, high humidity, or when rain or heavy dew is expected within the drying window.' },
+      { title: 'Apply two topcoats', body: 'Apply two full topcoats, respecting the recoat time on the can. Two coats give the colour depth and the protection the cladding needs.' },
+      { title: 'Remove masking and clean up', body: 'Pull masking while the final coat is still slightly tacky, clean tools, and check the finished work for missed spots and runs.' }
+    ],
+    bestPractice: [
+      'Wash first and let it dry fully — adhesion fails over dirt, mould and chalk.',
+      'Don\'t paint in direct hot sun, in high humidity, or when rain/dew is due within the drying window — it causes lap marks and poor adhesion.',
+      'Prime every bare area, seal knots, and rust-prime metal and fixings.',
+      'Work top to bottom, following the shade around the building.',
+      'Use a quality exterior system and apply two topcoats.'
+    ],
+    commonMistakes: [
+      'Painting over a dirty, mouldy or chalky surface — it peels within a season.',
+      'Painting in hot sun or before rain — lap marks, blistering and adhesion failure.',
+      'Skipping primer on bare timber and metal — bleed-through and early failure.',
+      'Sealing drainage paths or flashing undersides shut — traps water in the wall.'
+    ],
+    safety: 'Working at height is the major risk — use scaffold rather than over-reaching from ladders, secure ladders on firm ground, and never work near the eaves where the power service line connects without keeping well clear. Treat pre-1980 paint as lead-based: no dry sanding or water-blasting without proper containment and a respirator.'
+  },
+
+  {
+    id: 'concrete-pad',
+    category: 'Exterior',
+    title: 'Lay a small concrete pad or path',
+    summary: 'Form, pour and finish a small slab on a compacted base — shed bases, steps, paths.',
+    difficulty: 'Intermediate',
+    time: '1–2 days plus curing',
+    overview:
+      'A small concrete pad — a shed base, a step landing, a short path — is achievable for a careful DIYer. The work is in the base, the formwork and the finishing, and once the concrete is poured it sets on its own schedule, so preparation, a plan and enough helpers matter. Structural slabs (house floors, driveways carrying vehicles) need engineering and are not a DIY job.',
+    tools: [
+      'Spade, shovel and wheelbarrow',
+      'Formwork timber, pegs and a hand saw',
+      'Spirit level and string line',
+      'Plate compactor (hire) for the base',
+      'Screed board, bull float and hand float',
+      'Edging trowel and a stiff broom',
+      'Gloves, gumboots and eye protection'
+    ],
+    materials: [
+      'Concrete — bagged mix for small pads, or ordered ready-mix for anything larger',
+      'Basecourse / GAP hardfill for the sub-base',
+      'Reinforcing mesh and chairs (where the pad needs it)',
+      'Form timber and stakes',
+      'Polythene (damp-proof membrane under a slab where required)',
+      'Expansion-joint material for longer paths'
+    ],
+    steps: [
+      { title: 'Set out and excavate', body: 'Mark the area and excavate to allow for the compacted base plus the slab thickness (about 100 mm of concrete is typical for light-duty pads). Keep the base depth consistent.' },
+      { title: 'Lay and compact the base', body: 'Spread basecourse hardfill and compact it firmly with a plate compactor — a soft base is the main cause of cracking and sinking. Lay polythene over the base if a damp-proof membrane is required.' },
+      { title: 'Build and brace the formwork', body: 'Set form timber to the finished height with a slight fall (about 1:50) for drainage, and brace it well with stakes — wet concrete is heavy and pushes the forms outward.' },
+      { title: 'Place reinforcing if needed', body: 'Lay reinforcing mesh on chairs so it sits within the slab (not on the ground) where the pad requires it.' },
+      { title: 'Pour and screed', body: 'Place the concrete, working it into the corners and tamping out air pockets. Screed it off level with the top of the forms using a straight board worked side to side. Don\'t add extra water to make it flow — that weakens the concrete and dusts the surface.' },
+      { title: 'Float, edge and finish', body: 'Bull-float the surface, then wait for the bleed water to disappear before hand-floating and edging. Finish with a stiff broom drawn across for a non-slip surface.' },
+      { title: 'Cure it slowly', body: 'Keep the slab damp or covered with polythene for several days. Slow curing is what gives concrete its strength — letting it dry out fast causes surface cracking and dusting. Strip the forms after a couple of days.' }
+    ],
+    bestPractice: [
+      'A firm, well-compacted base is the foundation of a crack-free pad.',
+      'Brace the formwork solidly — wet concrete will push out weak forms.',
+      'Build in a fall (about 1:50) so water drains off the pad.',
+      'Never add water on site to make the mix easier to place — it weakens the concrete and ruins the surface.',
+      'Cure slowly: keep it moist for several days. Plan the pour with enough people to place and finish before it sets.'
+    ],
+    commonMistakes: [
+      'Pouring onto a soft or uncompacted base — the slab cracks and sinks.',
+      'Under-braced forms that bulge or blow out during the pour.',
+      'Adding water to the mix — weak, dusty, low-strength concrete.',
+      'Floating while bleed water is still on the surface, or skipping curing — surface defects and cracking.'
+    ],
+    safety: 'Wet concrete is caustic — wear gloves, gumboots and eye protection and wash any skin contact off immediately. Dry mix contains silica — wear a mask when mixing. Bags and barrows are heavy; lift with your legs. Plan the job so you are not caught out as the concrete goes off.'
+  },
+
+  {
+    id: 'pergola',
+    category: 'Exterior',
+    title: 'Build a pergola',
+    summary: 'Posts, beams and rafters for an open shade structure — freestanding or attached.',
+    difficulty: 'Advanced',
+    time: '2–3 weekends',
+    overview:
+      'A pergola is a frame of posts, beams and rafters that creates shade or supports climbing plants. A freestanding garden pergola is within reach of a confident DIYer; one attached to the house, or above a certain size, may require building consent and proper structural fixing to the building — check with your council. Footings, plumb posts and bracing are what keep it standing; even rafter spacing is what makes it look right.',
+    tools: [
+      'Post hole borer or spade',
+      'Spirit level and string line',
+      'Circular saw and a handsaw',
+      'Cordless drill/driver and a socket set (for coach bolts)',
+      'Framing square and clamps',
+      'Ladder or trestles'
+    ],
+    materials: [
+      'H4/H5 posts (e.g. 100 × 100)',
+      'Beam timber (e.g. 190 × 45, often doubled)',
+      'Rafter / cross-member timber',
+      'Rapid-set concrete for footings',
+      'Galvanised post anchors / bases (keep posts off the concrete)',
+      'Coach bolts, structural screws and joist/rafter brackets',
+      'Knee-brace timber for rigidity'
+    ],
+    steps: [
+      { title: 'Plan size, height and position', body: 'Decide the footprint, height and post positions. Check council requirements and boundary setbacks — an attached or larger pergola may need consent. Plan rafter spacing for the look and the shade you want.' },
+      { title: 'Set out square', body: 'Mark the post positions and check the layout is square using the 3-4-5 method and equal diagonals before you dig.' },
+      { title: 'Set the posts', body: 'Concrete the posts into footings (or fix galvanised post anchors to an existing slab/footings), plumb in both planes and braced, and let the concrete cure. Galvanised anchors keep the post off the concrete so it doesn\'t sit in water and rot.' },
+      { title: 'Cut posts to height', body: 'Run a level line around the posts at the finished height and cut them all to a consistent level.' },
+      { title: 'Fix the beams', body: 'Lift the beams onto the posts and fix them with coach bolts or beam brackets (notching the posts gives a stronger seat). Keep the beams level.' },
+      { title: 'Fit the rafters', body: 'Lay the rafters across the beams at even spacing and fix each with rafter brackets or skew screws. Consistent spacing is what makes a pergola look professional.' },
+      { title: 'Add bracing', body: 'Fit knee braces at the post-to-beam joints (or cross-bracing) to stop the structure racking and to resist wind. A pergola without bracing leans over time.' },
+      { title: 'Finish', body: 'Stain or oil the timber. Add battens, shade sail or a climbing plant as desired.' }
+    ],
+    bestPractice: [
+      'Size the footings for the structure and the wind exposure — an under-footed pergola moves and leans.',
+      'Keep posts plumb and braced until everything is fixed.',
+      'Fit knee braces or cross-bracing to resist racking and wind — this is not optional on an open structure.',
+      'Use galvanised post anchors so posts sit clear of standing water, and stainless/hot-dip fixings throughout.',
+      'Space rafters evenly — it is the single biggest factor in how good the finished pergola looks.'
+    ],
+    commonMistakes: [
+      'Under-sized footings — the pergola shifts and leans in wind.',
+      'No bracing — the frame racks into a parallelogram over time.',
+      'Posts in direct ground/water contact without proper treatment — rot at the base.',
+      'Fixing an "attached" pergola to fascia or spouting rather than structural framing — it pulls away.'
+    ],
+    safety: 'Lifting and fixing beams overhead is the main risk — get help, support beams while you bolt them, and use a stable platform rather than over-reaching from a ladder. Locate underground services before digging footings. Wind loads on a pergola are real — brace it properly, and get consent and structural fixing for attached or large structures.'
+  },
+
+  // ===== CLADDING =====
+  {
+    id: 'weatherboard-repair',
+    category: 'Cladding',
+    title: 'Repair or replace damaged weatherboards',
+    summary: 'Swap out a rotten or split board without disturbing the rest of the wall.',
+    difficulty: 'Advanced',
+    time: 'Half a day to a day per board',
+    overview:
+      'Individual damaged, split or rotten weatherboards can be replaced without re-cladding the whole wall. The skill is removing the damaged board without wrecking the boards above and below, repairing any building wrap or flashing behind it, and integrating the new board so the wall stays weathertight. Always find and fix the cause of the rot — a leak, splashback or ground contact — or the problem returns.',
+    tools: [
+      'Oscillating multi-tool or a fine handsaw',
+      'Pry bar and a wide chisel',
+      'Hammer and nail punch',
+      'Cordless drill/driver',
+      'Caulking gun',
+      'Paintbrush',
+      'Scaffold or a safely footed ladder'
+    ],
+    materials: [
+      'Replacement weatherboard matching the profile and treatment (H3.1 minimum)',
+      'Stainless steel nails',
+      'Building wrap / flashing tape for repairs behind the board',
+      'Exterior primer and topcoat to match',
+      'Neutral-cure exterior sealant',
+      'Timber preservative for cut ends'
+    ],
+    steps: [
+      { title: 'Find the extent and the cause', body: 'Probe the board and surrounds to find how far the damage or rot goes, and identify where the water is getting in (a failed joint, a leaking flashing, splashback from the ground, paint failure). Fixing the board without fixing the cause just delays the next failure.' },
+      { title: 'Release the damaged board', body: 'Cut along the length of the damaged board, and free the nails holding the board above it (the nails usually pin through into the board below). Work the board out without levering hard against the sound boards around it.' },
+      { title: 'Check and repair behind', body: 'Inspect the building wrap and any flashing behind the gap. If the wrap is torn or the flashing is compromised, repair it with flashing tape / new underlay, shingle-lapped so water sheds outward. This hidden layer is what actually keeps the wall dry.' },
+      { title: 'Prime the new board', body: 'Cut the replacement to length and prime every face, the back, and especially all cut ends with primer/preservative before fitting. End-grain left bare is where rot restarts.' },
+      { title: 'Fit and fix the board', body: 'Slide the new board into place, maintaining the same overlap as the existing boards. Where it butts another board, cut a back-bevelled scarf so water sheds outward. Nail with stainless nails — one per stud — into the framing.' },
+      { title: 'Seal and paint', body: 'Seal the butt joints and prime the nail heads, then paint the board to match the wall. Don\'t seal the bottom edges of the boards or any drainage paths.' }
+    ],
+    bestPractice: [
+      'Find and fix the water source first — replacing the board alone won\'t stop the rot returning.',
+      'Prime all faces and especially the end-grain of the new board before fitting.',
+      'Repair the building wrap/flashing behind the board, shingle-lapped, before closing the wall up.',
+      'Match the profile and treatment (H3.1 minimum), use stainless nails, and fix one nail per stud.',
+      'Back-bevel butt joints so water sheds, and leave drainage paths and bottom edges unsealed.'
+    ],
+    commonMistakes: [
+      'Replacing the board but not fixing the leak — the rot simply returns.',
+      'Leaving cut ends and the back of the new board unprimed — it re-rots from the end-grain.',
+      'Tearing the building wrap during removal and not repairing it.',
+      'Using the wrong profile or treatment level, or over-nailing and splitting the board.'
+    ],
+    safety: 'Most weatherboard repairs are at height — use a scaffold or a properly footed ladder and don\'t over-reach. Treat pre-1980 paint as lead-based when sanding. Before plunge-cutting into a wall, consider what may be behind the cladding (wiring, pipes). Wear eye protection when cutting.'
   }
 ];
 
 const CATEGORIES = [
   { name: 'Exterior', desc: 'Outside the home — fences, decks, cladding.' },
+  { name: 'Cladding', desc: 'Weatherboards, sheet cladding, building wrap.' },
   { name: 'Walls & ceilings', desc: 'Plasterboard, stopping and finishing.' },
+  { name: 'Insulation & energy', desc: 'Insulation and draught-proofing.' },
   { name: 'Interior trim', desc: 'Skirtings, architraves and trim work.' },
   { name: 'Interior', desc: 'Doors, painting and fit-out.' },
+  { name: 'Joinery & restoration', desc: 'Restoring timber windows, doors and hardware.' },
   { name: 'Wet areas', desc: 'Tiling, splashbacks and bathrooms.' },
   { name: 'Tools & technique', desc: 'Sharpening, hand-tool skills.' }
 ];
@@ -1219,6 +2329,29 @@ const BACKEND = {
     const all = STORE.progress();
     all[u.email] = {};
     STORE.saveProgress(all);
+  },
+
+  async deleteAccount() {
+    if (this.mode === 'supabase') {
+      if (!this.cachedUser) throw new Error('Not signed in.');
+      const { error } = await this.client.rpc('delete_account');
+      if (error) throw new Error(error.message);
+      try { await this.client.auth.signOut(); } catch (e) {}
+      this.cachedUser = null;
+      this.cachedProgress = {};
+      return;
+    }
+    // Local mode — remove the user record and their progress.
+    const s = STORE.session();
+    if (s) {
+      const users = STORE.users();
+      delete users[s.email];
+      STORE.saveUsers(users);
+      const all = STORE.progress();
+      delete all[s.email];
+      STORE.saveProgress(all);
+      STORE.saveSession(null);
+    }
   }
 };
 
@@ -1309,6 +2442,19 @@ async function resetProgress() {
   showView('profile');
 }
 
+async function deleteAccount() {
+  const msg = 'Permanently delete your account and all your data? This cannot be undone.';
+  if (!confirm(msg)) return;
+  if (!confirm('Are you absolutely sure? Your account and progress will be erased.')) return;
+  try {
+    await BACKEND.deleteAccount();
+    alert('Your account has been deleted.');
+    logout();
+  } catch (e) {
+    alert('Could not delete account: ' + (e.message || 'unknown error') + '\nPlease try again or contact support.');
+  }
+}
+
 function dismissHomeDisclaimer() {
   try { localStorage.setItem('bh_disclaimer_dismissed', '1'); } catch (e) {}
   const el = document.getElementById('home-disclaimer');
@@ -1328,6 +2474,7 @@ function enterApp() {
     const el = document.getElementById('home-disclaimer');
     if (el) el.style.display = 'none';
   }
+  renderCategoryFilters();
   renderHome();
   renderProfile();
   showView('home');
@@ -1370,6 +2517,25 @@ function iconForCategory(cat) {
   return icons[cat] || icons['Interior'];
 }
 
+let activeCategory = 'All';
+
+function setCategory(cat) {
+  activeCategory = cat;
+  renderCategoryFilters();
+  renderHome();
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+function renderCategoryFilters() {
+  const el = document.getElementById('cat-filters');
+  if (!el) return;
+  const cats = ['All'].concat(CATEGORIES.map(c => c.name));
+  el.innerHTML = cats.map(c =>
+    '<button class="cat-chip ' + (c === activeCategory ? 'active' : '') + '" onclick="setCategory(' +
+    JSON.stringify(c).replace(/"/g, '&quot;') + ')">' + escapeHtml(c) + '</button>'
+  ).join('');
+}
+
 function renderHome() {
   const query = (document.getElementById('search').value || '').trim().toLowerCase();
   const progress = userProgress();
@@ -1384,11 +2550,12 @@ function renderHome() {
   container.innerHTML = '';
 
   const filtered = TASKS.filter(t =>
-    !query ||
-    t.title.toLowerCase().includes(query) ||
-    t.summary.toLowerCase().includes(query) ||
-    t.category.toLowerCase().includes(query) ||
-    t.overview.toLowerCase().includes(query)
+    (activeCategory === 'All' || t.category === activeCategory) &&
+    (!query ||
+      t.title.toLowerCase().includes(query) ||
+      t.summary.toLowerCase().includes(query) ||
+      t.category.toLowerCase().includes(query) ||
+      t.overview.toLowerCase().includes(query))
   );
 
   if (filtered.length === 0) {
@@ -1443,11 +2610,7 @@ function renderTask(id) {
       <strong>Guide only.</strong> This is general guidance for an everyday DIY job. Confirm requirements with your local council and product manufacturers. Restricted Building Work, structural changes, plumbing, gas and electrical work must be carried out or supervised by a qualified, licensed person.
     </div>
 
-    ${(typeof ILLUSTRATIONS !== 'undefined' && ILLUSTRATIONS[t.id]) ? `
-    <div class="illustration">
-      <img src="${ILLUSTRATIONS[t.id]}" alt="${escapeHtml(t.title)} illustration" loading="lazy" />
-      <div class="illustration-caption">Illustration — indicative only, refer to product specifications</div>
-    </div>` : ''}
+    ${renderOverviewIllustration(t)}
 
     <div class="panel">
       <div class="panel-head">
@@ -1489,6 +2652,7 @@ function renderTask(id) {
             <div class="step-body">
               <strong>${escapeHtml(s.title)}</strong>
               <p>${escapeHtml(s.body)}</p>
+              ${renderStepDiagram(t, s, i)}
             </div>
           </div>
         `).join('')}
@@ -1555,6 +2719,134 @@ function renderProfile() {
     completed + ' of ' + total + ' tasks marked as learned.';
 }
 
+// ---------- DIAGRAMS / PHOTOS ----------
+// Photo-first: each task shows a real photo if one exists at
+//   photo-<task-id>.jpg            (overview / hero)
+//   photo-<task-id>-<stepNumber>.jpg (per step)
+// Until a photo is added, the technical diagram (or legacy PNG) shows as a
+// placeholder. Photos are silently preloaded; if found, they replace the
+// placeholder automatically — no code changes needed to add a photo.
+function renderOverviewIllustration(t) {
+  // Photo-only: show a real photo if one exists at photo-<id>.jpg, otherwise
+  // nothing (the guide reads as clean structured text until a photo is added).
+  const photo = 'photo-' + t.id + '.jpg';
+  return '<div class="illustration" id="ovr-' + t.id + '" style="display:none">' +
+    '<img class="photo-preload" src="' + photo + '" alt="" ' +
+    'onload="upgradeOverviewToPhoto(\'' + t.id + '\',\'' + photo + '\')" onerror="this.closest(\'.illustration\').remove()" />' +
+    '</div>';
+}
+
+function upgradeOverviewToPhoto(taskId, photo) {
+  const box = document.getElementById('ovr-' + taskId);
+  if (!box) return;
+  box.style.display = '';
+  box.innerHTML = '<img src="' + photo + '" alt="" loading="lazy" />' +
+    '<div class="illustration-caption">Tap to enlarge</div>';
+  box.onclick = function () { openLightboxImage(photo); };
+}
+
+function renderStepDiagram(t, step, idx) {
+  // Photo-only per step: shows photo-<id>-<stepNumber>.jpg if present, else nothing.
+  const photo = 'photo-' + t.id + '-' + (idx + 1) + '.jpg';
+  const slotId = 'stepvis-' + t.id + '-' + idx;
+  return '<div class="step-diagram" id="' + slotId + '" style="display:none">' +
+    '<img class="photo-preload" src="' + photo + '" alt="" ' +
+    'onload="upgradeStepToPhoto(\'' + slotId + '\',\'' + photo + '\')" onerror="this.closest(\'.step-diagram\').remove()" />' +
+    '</div>';
+}
+
+function upgradeStepToPhoto(slotId, photo) {
+  const box = document.getElementById(slotId);
+  if (!box) return;
+  box.style.display = '';
+  box.innerHTML = '<img src="' + photo + '" alt="" loading="lazy" />';
+  box.onclick = function () { openLightboxImage(photo); };
+}
+
+// ---------- LIGHTBOX (pan + zoom) ----------
+const LIGHTBOX = {
+  el: null, content: null, scale: 1, tx: 0, ty: 0,
+  pointers: new Map(), pinchStart: 0, scaleStart: 1,
+  panStart: null, txStart: 0, tyStart: 0,
+  init() {
+    this.el = document.getElementById('lightbox');
+    this.content = document.getElementById('lightbox-content');
+    document.getElementById('lightbox-close').addEventListener('click', () => this.close());
+    this.el.addEventListener('click', (e) => { if (e.target === this.el) this.close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && this.el.classList.contains('open')) this.close(); });
+    // Pointer events for pan/zoom on the inner content
+    this.el.addEventListener('pointerdown', (e) => this.onPointerDown(e));
+    this.el.addEventListener('pointermove', (e) => this.onPointerMove(e));
+    this.el.addEventListener('pointerup', (e) => this.onPointerUp(e));
+    this.el.addEventListener('pointercancel', (e) => this.onPointerUp(e));
+    this.el.addEventListener('wheel', (e) => this.onWheel(e), { passive: false });
+  },
+  open(html) {
+    this.content.innerHTML = html;
+    this.scale = 1; this.tx = 0; this.ty = 0;
+    this.applyTransform();
+    this.el.classList.add('open');
+  },
+  close() {
+    this.el.classList.remove('open');
+    this.content.innerHTML = '';
+    this.pointers.clear();
+  },
+  applyTransform() {
+    const child = this.content.firstElementChild;
+    if (child) child.style.transform = `translate(${this.tx}px, ${this.ty}px) scale(${this.scale})`;
+  },
+  onPointerDown(e) {
+    if (e.target.id === 'lightbox-close' || e.target === this.el) return;
+    this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (this.pointers.size === 2) {
+      const pts = Array.from(this.pointers.values());
+      this.pinchStart = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+      this.scaleStart = this.scale;
+    } else if (this.pointers.size === 1) {
+      this.panStart = { x: e.clientX, y: e.clientY };
+      this.txStart = this.tx; this.tyStart = this.ty;
+    }
+    if (this.el.setPointerCapture) try { this.el.setPointerCapture(e.pointerId); } catch (_) {}
+  },
+  onPointerMove(e) {
+    if (!this.pointers.has(e.pointerId)) return;
+    this.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (this.pointers.size === 2) {
+      const pts = Array.from(this.pointers.values());
+      const d = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+      this.scale = Math.max(0.5, Math.min(6, this.scaleStart * (d / this.pinchStart)));
+      this.applyTransform();
+    } else if (this.pointers.size === 1 && this.panStart) {
+      this.tx = this.txStart + (e.clientX - this.panStart.x);
+      this.ty = this.tyStart + (e.clientY - this.panStart.y);
+      this.applyTransform();
+    }
+  },
+  onPointerUp(e) {
+    this.pointers.delete(e.pointerId);
+    if (this.pointers.size < 2) this.pinchStart = 0;
+    if (this.pointers.size === 0) this.panStart = null;
+  },
+  onWheel(e) {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    this.scale = Math.max(0.5, Math.min(6, this.scale * factor));
+    this.applyTransform();
+  }
+};
+
+function openLightbox(diagramKey, taskId) {
+  if (typeof DIAGRAMS === 'undefined' || !DIAGRAMS[taskId]) return;
+  const d = DIAGRAMS[taskId];
+  const svgStr = diagramKey === 'overview' ? d.overview : d[diagramKey];
+  if (!svgStr) return;
+  LIGHTBOX.open(svgStr);
+}
+function openLightboxImage(src) {
+  LIGHTBOX.open(`<img src="${src}" alt="" />`);
+}
+
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, '&amp;')
@@ -1567,6 +2859,7 @@ function escapeHtml(s) {
 // ---------- BOOT ----------
 window.addEventListener('load', async () => {
   BACKEND.init();
+  if (typeof LIGHTBOX !== 'undefined') LIGHTBOX.init();
   // Show the backend mode subtly on the auth screen for clarity during dev.
   const modeLabel = document.getElementById('backend-mode');
   if (modeLabel) {
