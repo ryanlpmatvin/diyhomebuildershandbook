@@ -13,20 +13,21 @@
 <title>DIY - Home Builders Handbook</title>
 <style>
   :root {
-    --bg: #0f1115;
-    --surface: #171a21;
-    --surface-2: #1f232c;
-    --border: #2a2f3a;
-    --text: #e7ecf3;
-    --muted: #9aa4b2;
-    --accent: #4f8cff;
-    --accent-2: #1f6feb;
-    --success: #2ea043;
-    --warn: #f0b429;
-    --danger: #f04438;
+    --bg: #0e1116;
+    --surface: #171b22;
+    --surface-2: #20262f;
+    --border: #2b323d;
+    --text: #eef1f6;
+    --muted: #9aa3b2;
+    --accent: #ff9d4d;
+    --accent-2: #ef7a22;
+    --accent-2-dark: #c25e1c;
+    --success: #34c759;
+    --warn: #ffc53d;
+    --danger: #ff5a52;
     --radius: 14px;
     --radius-sm: 10px;
-    --shadow: 0 8px 24px rgba(0,0,0,0.35);
+    --shadow: 0 8px 24px rgba(0,0,0,0.4);
     --safe-top: env(safe-area-inset-top);
     --safe-bottom: env(safe-area-inset-bottom);
   }
@@ -109,7 +110,7 @@
     gap: 4px;
     font-size: 11px;
   }
-  .tabbar button.active { color: var(--accent); background: rgba(79,140,255,0.08); }
+  .tabbar button.active { color: var(--accent); background: rgba(255,157,77,0.10); }
   .tabbar svg { width: 22px; height: 22px; }
 
   /* Content */
@@ -204,7 +205,7 @@
 
   /* Hero */
   .hero {
-    background: linear-gradient(135deg, #1f6feb 0%, #0a3d91 100%);
+    background: linear-gradient(135deg, #ee7b2b 0%, #8f3d0c 100%);
     border-radius: var(--radius);
     padding: 20px;
     margin-bottom: 16px;
@@ -249,7 +250,7 @@
   .task-icon {
     width: 36px; height: 36px;
     border-radius: 10px;
-    background: rgba(79,140,255,0.12);
+    background: rgba(255,157,77,0.14);
     color: var(--accent);
     display: inline-flex;
     align-items: center;
@@ -537,7 +538,7 @@
   .avatar {
     width: 52px; height: 52px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #1f6feb, #0a3d91);
+    background: linear-gradient(135deg, #ee7b2b, #8f3d0c);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -605,7 +606,7 @@
   }
   .progress-bar > div {
     height: 100%;
-    background: linear-gradient(90deg, var(--accent), #6fb1ff);
+    background: linear-gradient(90deg, var(--accent), #ffce9e);
     transition: width .3s ease;
   }
 </style>
@@ -784,8 +785,6 @@
 
 <script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
 <script src="config.js"></script>
-<script src="illustrations.js"></script>
-<script src="diagrams.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -1661,6 +1661,7 @@ const TASKS = [
     category: 'Exterior',
     title: 'Build deck stairs with cut stringers',
     summary: 'Lay out and cut stringers for stairs from a deck to the ground.',
+    keywords: ['deck steps', 'stairs', 'steps', 'stringers', 'riser', 'going'],
     difficulty: 'Advanced',
     time: '1 weekend',
     overview:
@@ -1712,6 +1713,7 @@ const TASKS = [
     category: 'Joinery & restoration',
     title: 'Restore timber window and door joinery',
     summary: 'Strip, repair, re-putty, prime and repaint old timber windows and doors.',
+    keywords: ['restoring', 'restoration', 'restore', 'villa', 'bungalow', 'character', 'heritage', 'sash', 'putty', 'rot repair', 'lead paint', 'old windows', 'timber joinery'],
     difficulty: 'Advanced',
     time: 'A weekend per window/door',
     overview:
@@ -1734,13 +1736,13 @@ const TASKS = [
       'Abrasives (80–180 grit), methylated spirits, dust sheets'
     ],
     steps: [
-      { title: 'Assess what you\'re dealing with', body: 'Check the joinery for rot (probe soft spots with a screwdriver), failed putty, loose joints and flaking paint. Decide what can be repaired in place versus what needs a sash removed. Assume any paint in a pre-1980 home is lead-based until proven otherwise.' },
-      { title: 'Set up for safe lead-paint work', body: 'For pre-1980 paint: work outdoors or isolate the room with drop sheets, wear a P2/P3 respirator, and use wet-scraping, chemical stripper, or an infrared stripper / low-temp heat — never a high-heat gun or dry power-sanding, which create toxic lead dust and fumes. Collect and bag all debris.' },
-      { title: 'Strip back the failed paint', body: 'Remove flaking and built-up paint back to a sound, firm surface (you don\'t always need bare timber — just stable paint). Scrape with the grain; use the stripper/heat to soften stubborn build-up. Keep the profiles crisp.' },
-      { title: 'Repair rot and splits', body: 'Dig out soft, rotten timber back to sound wood. Treat the area with epoxy consolidant, then rebuild the profile with two-part epoxy filler, or splice in a matching timber section (a "dutchman") for larger losses. Sand to profile once cured.' },
-      { title: 'Rake out and renew the putty', body: 'On single-glazed sashes, rake out cracked, loose glazing putty with a multi-tool or chisel without cracking the glass. Re-bed any loose glass, then press in fresh linseed putty and strike it off at a clean 45° bevel with a glazing knife.' },
+      { title: 'Assess what you\'re dealing with', body: 'Check the joinery for rot (probe soft spots with a screwdriver), failed putty, loose joints and flaking paint. Decide what can be repaired in place versus what needs a sash removed. Assume any paint in a pre-1980 home is lead-based until proven otherwise.', diagram: 'restore-joinery-step-anatomy' },
+      { title: 'Set up for safe lead-paint work', body: 'For pre-1980 paint: work outdoors or isolate the room with drop sheets, wear a P2/P3 respirator, and use wet-scraping, chemical stripper, or an infrared stripper / low-temp heat — never a high-heat gun or dry power-sanding, which create toxic lead dust and fumes. Collect and bag all debris.', diagram: 'restore-joinery-step-leadsafe' },
+      { title: 'Strip back the failed paint', body: 'Remove flaking and built-up paint back to a sound, firm surface (you don\'t always need bare timber — just stable paint). Scrape with the grain; use the stripper/heat to soften stubborn build-up. Keep the profiles crisp.', diagram: 'restore-joinery-step-strip' },
+      { title: 'Repair rot and splits', body: 'Dig out soft, rotten timber back to sound wood. Treat the area with epoxy consolidant, then rebuild the profile with two-part epoxy filler, or splice in a matching timber section (a "dutchman") for larger losses. Sand to profile once cured.', diagram: 'restore-joinery-step-rotrepair' },
+      { title: 'Rake out and renew the putty', body: 'On single-glazed sashes, rake out cracked, loose glazing putty with a multi-tool or chisel without cracking the glass. Re-bed any loose glass, then press in fresh linseed putty and strike it off at a clean 45° bevel with a glazing knife.', diagram: 'restore-joinery-step-putty' },
       { title: 'Let the putty skin, then prime', body: 'New linseed putty must skin/cure (days to a couple of weeks) before painting. Prime all bare timber — knots get a knotting sealer, and prime the putty too. Back-prime any faces you can reach; end-grain especially needs sealing.' },
-      { title: 'Build the paint system', body: 'Apply undercoat, then one or two topcoats of exterior-grade enamel/acrylic. On glazing, lap the paint about 2 mm onto the glass off the putty — this seals the putty-to-glass join against water. Sand lightly between coats.' },
+      { title: 'Build the paint system', body: 'Apply undercoat, then one or two topcoats of exterior-grade enamel/acrylic. On glazing, lap the paint about 2 mm onto the glass off the putty — this seals the putty-to-glass join against water. Sand lightly between coats.', diagram: 'restore-joinery-step-paintlap' },
       { title: 'Rehang, adjust and seal', body: 'Refit hardware and rehang sashes/doors. Check they open, close and latch smoothly; ease any binding edges. Make sure drainage paths (weep holes in sills) are clear, not painted shut.' }
     ],
     bestPractice: [
@@ -1764,6 +1766,7 @@ const TASKS = [
     category: 'Joinery & restoration',
     title: 'Repair and fit window joinery hardware',
     summary: 'Stays, fasteners and sash cords — get old windows opening and latching again.',
+    keywords: ['restoring', 'restoration', 'sash cord', 'sash window', 'villa', 'bungalow', 'casement', 'double-hung', 'window latch', 'painted shut'],
     difficulty: 'Intermediate',
     time: '1–2 hours per window',
     overview:
@@ -2549,14 +2552,16 @@ function renderHome() {
   const container = document.getElementById('categories-container');
   container.innerHTML = '';
 
-  const filtered = TASKS.filter(t =>
-    (activeCategory === 'All' || t.category === activeCategory) &&
-    (!query ||
-      t.title.toLowerCase().includes(query) ||
-      t.summary.toLowerCase().includes(query) ||
-      t.category.toLowerCase().includes(query) ||
-      t.overview.toLowerCase().includes(query))
-  );
+  const words = query.split(/\s+/).filter(Boolean);
+  const filtered = TASKS.filter(t => {
+    if (activeCategory !== 'All' && t.category !== activeCategory) return false;
+    if (!words.length) return true;
+    const hay = (
+      t.title + ' ' + t.summary + ' ' + t.category + ' ' + t.overview +
+      (t.keywords ? ' ' + t.keywords.join(' ') : '')
+    ).toLowerCase();
+    return words.every(w => hay.includes(w));
+  });
 
   if (filtered.length === 0) {
     container.innerHTML = '<div class="empty">No tasks match "' + escapeHtml(query) + '".</div>';
@@ -2728,7 +2733,7 @@ function renderProfile() {
 // placeholder automatically — no code changes needed to add a photo.
 function renderOverviewIllustration(t) {
   // Photo-only: show a real photo if one exists at photo-<id>.jpg, otherwise
-  // nothing (the guide reads as clean structured text until a photo is added).
+  // nothing. Guides read as clean structured text until a photo is added.
   const photo = 'photo-' + t.id + '.jpg';
   return '<div class="illustration" id="ovr-' + t.id + '" style="display:none">' +
     '<img class="photo-preload" src="' + photo + '" alt="" ' +
@@ -2746,7 +2751,7 @@ function upgradeOverviewToPhoto(taskId, photo) {
 }
 
 function renderStepDiagram(t, step, idx) {
-  // Photo-only per step: shows photo-<id>-<stepNumber>.jpg if present, else nothing.
+  // Photo-only per step: shows photo-<id>-<n>.jpg if present, else nothing.
   const photo = 'photo-' + t.id + '-' + (idx + 1) + '.jpg';
   const slotId = 'stepvis-' + t.id + '-' + idx;
   return '<div class="step-diagram" id="' + slotId + '" style="display:none">' +

@@ -1,11 +1,9 @@
-const CACHE = 'handbook-v12';
+const CACHE = 'handbook-v14';
 const ASSETS = [
   './',
   './index.html',
   './privacy.html',
   './app.js',
-  './illustrations.js',
-  './diagrams.js',
   './config.js',
   './manifest.json',
   './icon.svg',
